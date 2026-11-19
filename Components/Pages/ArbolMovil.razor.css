@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap");
+
+.m-app {
+    --ink: #0f2744;
+    --muted: #5b6b7c;
+    --accent: #0d9f9f;
+    --sky: #3b82f6;
+    --male: #2b8cee;
+    --female: #e86b8a;
+    --line: rgba(13, 159, 159, 0.32);
+    --leaf: #7ee7e0;
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-top: env(safe-area-inset-top, 0px);
+    display: grid;
+    grid-template-rows: auto auto minmax(0, 1fr) auto;
+    height: 100dvh;
+    height: 100vh;
+    padding-top: var(--safe-top);
+    color: var(--ink);
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    overflow: hidden;
+}
+
+.m-top {
+    background: linear-gradient(135deg, #0d9f9f 0%, #3b82f6 100%);
+    color: #fff;
+    padding: 0.85rem 1rem 0.95rem;
+}
+
+.m-top h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: "Outfit", "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+.m-top p {
+    margin: 0.25rem 0 0;
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+
+.m-controls {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15, 39, 68, 0.06);
+    padding: 0.7rem 0.8rem 0.8rem;
+    display: grid;
+    gap: 0.55rem;
+}
+
+.m-lbl {
+    display: grid;
+    gap: 0.3rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+.m-lbl input,
+.m-lbl select {
+    width: 100%;
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    border-radius: 0.85rem;
+    padding: 0.72rem 0.9rem;
+    font-size: 1rem;
+    background: #fff;
+    color: var(--ink);
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.m-seg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.4rem;
+}
+
+.m-seg.two { grid-template-columns: 1fr 1fr; }
+
+.m-seg button {
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 0.75rem;
+    padding: 0.55rem 0.35rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    min-height: 2.55rem;
+    font-family: inherit;
+}
+
+.m-seg button.active {
+    background: linear-gradient(135deg, var(--accent), var(--sky));
+    border-color: transparent;
+    color: #fff;
+}
+
+.m-zoom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.m-zoom div { display: flex; gap: 0.35rem; }
+
+.m-zoom button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    background: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.m-stage {
+    overflow: hidden;
+    min-height: 0;
+    background:
+        radial-gradient(ellipse 80% 50% at 20% 0%, rgba(59, 130, 246, 0.12), transparent 55%),
+        linear-gradient(180deg, #eef8ff 0%, #e6f9f5 100%);
+}
+
+.m-viewport {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-x pan-y;
+    padding: 1rem 0.75rem 1.5rem;
+}
+
+.m-canvas {
+    transform-origin: top left;
+    width: max-content;
+    min-width: 100%;
+}
+
+@media (orientation: landscape) and (max-height: 560px) {
+    .m-top { padding: 0.35rem 0.75rem; }
+    .m-top h1 { font-size: 1rem; }
+    .m-top p { display: none; }
+    .m-controls {
+        max-height: 34dvh;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 0.45rem 0.65rem;
+    }
+    .m-viewport { padding: 0.5rem; }
+}
+
+::deep .tree-root,
+::deep .tree-children {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+::deep .hierarchy.vertical .tree-root > .tree-branch,
+::deep .hierarchy.vertical .tree-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::deep .hierarchy.vertical .tree-children {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    position: relative;
+    padding-top: 1.25rem;
+}
+
+::deep .hierarchy.vertical .tree-children::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 1.25rem;
+    background: var(--line);
+    transform: translateX(-50%);
+}
+
+::deep .hierarchy.vertical .tree-branch { position: relative; padding-top: 0.9rem; }
+
+::deep .hierarchy.vertical .tree-children > .tree-branch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 0.9rem;
+    background: var(--line);
+    transform: translateX(-50%);
+}
+
+::deep .hierarchy.horizontal .tree-root > .tree-branch,
+::deep .hierarchy.horizontal .tree-branch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+::deep .hierarchy.horizontal .tree-children {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    position: relative;
+    padding-left: 1.4rem;
+}
+
+::deep .hierarchy.horizontal .tree-children::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1.4rem;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch {
+    position: relative;
+    padding-left: 0.9rem;
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0.9rem;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+}
+
+::deep .tree-node-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    min-width: 11rem;
+    z-index: 1;
+}
+
+::deep .hierarchy.horizontal .tree-node-pair {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+::deep .spouse-amp {
+    align-self: center;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+::deep .person-card,
+.person-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+    width: 12.5rem;
+    text-align: left;
+    border: 1px solid rgba(15, 39, 68, 0.08);
+    border-left: 4px solid #94a3b8;
+    border-radius: 1rem;
+    padding: 0.75rem 0.85rem;
+    background: #fff;
+    box-shadow:
+        0 1px 2px rgba(15, 39, 68, 0.04),
+        0 8px 20px rgba(15, 39, 68, 0.06);
+}
+
+.m-layer-grid .person-card { width: 100%; }
+
+::deep .person-card.male,
+.person-card.male { border-left-color: var(--male); }
+::deep .person-card.female,
+.person-card.female { border-left-color: var(--female); }
+::deep .person-card.selected,
+.person-card.selected {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+::deep .person-name,
+.person-name {
+    font-family: "Outfit", "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+::deep .person-years,
+.person-years { font-size: 0.75rem; color: var(--muted); }
+
+.m-layers {
+    display: grid;
+    gap: 1rem;
+    width: min(100vw - 1.5rem, 28rem);
+}
+
+.m-layers h2 {
+    margin: 0 0 0.5rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-family: "Outfit", sans-serif;
+}
+
+.m-layer-grid { display: grid; gap: 0.45rem; }
+
+.m-dock {
+    background: rgba(255, 255, 255, 0.94);
+    border-top: 1px solid rgba(15, 39, 68, 0.06);
+    padding: 0.45rem 0.5rem calc(0.45rem + var(--safe-bottom));
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+}
+
+.m-dock a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    min-height: 3.1rem;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+}
+
+.m-dock a.active {
+    background: rgba(13, 159, 159, 0.12);
+    color: var(--accent);
+}
+
+.m-dock span { font-size: 1.1rem; }
+
+.m-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 39, 68, 0.4);
+    z-index: 40;
+}
+
+.m-sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: linear-gradient(160deg, #12304f 0%, #0f2744 100%);
+    color: #f4f8fc;
+    border-radius: 1.25rem 1.25rem 0 0;
+    padding: 0.55rem 1rem calc(1.1rem + var(--safe-bottom));
+    max-height: 70dvh;
+    overflow: auto;
+    animation: sheet-up 0.25s ease;
+}
+
+.m-handle {
+    width: 2.5rem;
+    height: 0.3rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.28);
+    margin: 0.2rem auto 0.75rem;
+}
+
+.m-sex {
+    margin: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--leaf);
+}
+
+.m-sheet h2 {
+    margin: 0.25rem 0 0.8rem;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.m-sheet dl { margin: 0; display: grid; gap: 0.55rem; }
+.m-sheet dl div { display: grid; gap: 0.15rem; }
+.m-sheet dt { color: #94a8bc; font-size: 0.75rem; }
+.m-sheet dd { margin: 0; font-size: 0.95rem; }
+
+.m-sheet-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.m-sheet-actions button {
+    min-height: 2.75rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(126, 231, 224, 0.4);
+    background: transparent;
+    color: var(--leaf);
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.m-sheet-actions button.primary {
+    background: linear-gradient(135deg, #0d9f9f, #3b82f6);
+    color: #fff;
+    border-color: transparent;
+}
+
+@keyframes sheet-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}

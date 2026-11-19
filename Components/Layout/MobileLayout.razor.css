@@ -1,0 +1,12 @@
+.mobile-shell {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #e8f4f8;
+}
+
+::deep .page,
+::deep main,
+::deep article.content {
+    margin: 0 !important;
+    padding: 0 !important;
+}

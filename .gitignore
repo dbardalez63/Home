@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+app.db
+app.db-shm
+app.db-wal
+**/Data/*.db
+**/Data/*.db-shm
+**/Data/*.db-wal
+node_modules/
+.DS_Store
+Thumbs.db
+*.zip

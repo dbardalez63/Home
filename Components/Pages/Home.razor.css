@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap");
+
+.home-hero {
+    max-width: 40rem;
+    padding: 1.5rem 0 2rem;
+    animation: home-rise 0.65s ease both;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+}
+
+.eyebrow {
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #0d9f9f;
+}
+
+.home-hero h1 {
+    margin: 0;
+    font-family: "Outfit", "Manrope", sans-serif;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(120deg, #0f2744 20%, #0d9f9f 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-hero p {
+    margin: 0.85rem 0 1.25rem;
+    color: #5b6b7c;
+    line-height: 1.55;
+}
+
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.home-cta,
+.home-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.1rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-cta:hover,
+.home-secondary:hover {
+    transform: translateY(-1px);
+}
+
+.home-cta {
+    background: linear-gradient(135deg, #0d9f9f, #3b82f6);
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(13, 159, 159, 0.28);
+}
+
+.home-secondary {
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    color: #0f2744;
+    background: #fff;
+}
+
+@keyframes home-rise {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

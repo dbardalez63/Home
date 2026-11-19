@@ -1,0 +1,16 @@
+bin/
+obj/
+.publish/
+publish/
+.git/
+.vs/
+*.user
+*.db
+Data/keys/
+logs/
+synology-data/
+synology-static/
+arbol-data.js
+arbol-genealogico.html
+arbol-movil.html
+Properties/PublishProfiles/

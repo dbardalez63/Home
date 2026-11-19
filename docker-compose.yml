@@ -1,0 +1,20 @@
+services:
+  familia-rodriguez:
+    build: .
+    image: familia-rodriguez:latest
+    container_name: familia-rodriguez
+    restart: unless-stopped
+    ports:
+      - "8088:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:8080
+      DisableHttpsRedirection: "true"
+      # Leave empty if the container is reached at http://NAS:8088/
+      # Set to /FamiliaRodriguez if you put it behind Reverse Proxy as /FamiliaRodriguez
+      PathBase: ""
+      ConnectionStrings__DefaultConnection: "DataSource=/app/Data/app.db;Cache=Shared"
+    volumes:
+      - ./synology-data:/app/Data
+    # Synology tip: map a shared folder instead, e.g.
+    # - /volume1/docker/familia-rodriguez/data:/app/Data

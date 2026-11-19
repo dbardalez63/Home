@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=5" />
+  <meta name="theme-color" content="#0d9f9f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Árbol Familiar" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/icon-192.svg" />
+  <link rel="icon" href="icons/icon-192.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="arbol-tree.css" />
+  <title>Árbol móvil — Familia Rodríguez</title>
+  <style>
+    :root {
+      --ink: #0f2744;
+      --muted: #5b6b7c;
+      --accent: #0d9f9f;
+      --sky: #3b82f6;
+      --leaf: #7ee7e0;
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+      --app-bg: #e8f4f8;
+      --chrome-grad: linear-gradient(135deg, #0d9f9f 0%, #3b82f6 100%);
+      --panel: rgba(255, 255, 255, 0.98);
+      --stage-bg:
+        radial-gradient(ellipse 80% 50% at 20% 0%, rgba(59, 130, 246, 0.12), transparent 55%),
+        linear-gradient(180deg, #eef8ff 0%, #e6f9f5 100%);
+      --dock-bg: rgba(255, 255, 255, 0.94);
+      --input-bg: #fff;
+    }
+    html.night {
+      --ink: #e6edf5;
+      --muted: #9aa8b8;
+      --accent: #5ec8c0;
+      --sky: #7aa7e0;
+      --leaf: #8fd9d2;
+      --app-bg: #0f1722;
+      --chrome-grad: linear-gradient(135deg, #1d4f4c 0%, #2a4d73 100%);
+      --panel: rgba(28, 39, 54, 0.98);
+      --stage-bg:
+        radial-gradient(ellipse 80% 50% at 20% 0%, rgba(61, 110, 165, 0.18), transparent 55%),
+        linear-gradient(180deg, #121c2a 0%, #152032 100%);
+      --dock-bg: rgba(20, 30, 42, 0.96);
+      --input-bg: #243041;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      margin: 0; height: 100%; overflow: hidden; color: var(--ink);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background: var(--app-bg);
+    }
+    .app {
+      position: relative;
+      display: grid;
+      /* areas fijas: el stage SIEMPRE recibe 1fr (evita scroll roto en landscape) */
+      grid-template-areas:
+        "chrome"
+        "stage"
+        "dock";
+      grid-template-rows: auto minmax(0, 1fr) auto;
+      height: 100dvh; height: 100vh;
+      width: 100%;
+      max-width: none;
+      padding-top: var(--safe-top);
+      box-sizing: border-box;
+    }
+    .chrome {
+      grid-area: chrome;
+      background: var(--chrome-grad);
+      color: #fff;
+      padding: 0.45rem 0.65rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      min-height: 2.6rem;
+    }
+    .chrome h1 {
+      margin: 0; font-size: 0.95rem;
+      font-family: "Outfit", "Manrope", sans-serif; font-weight: 700;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .chrome .meta { display: none; }
+    .chrome-actions { display: flex; align-items: center; gap: 0.3rem; flex-shrink: 0; }
+    .chrome-actions button {
+      border: 1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.16);
+      color: #fff; border-radius: 0.55rem; min-height: 2rem; padding: 0 .55rem;
+      font-weight: 700; font-family: inherit; font-size: 0.8rem;
+    }
+    .chrome-actions .zoom-btns { display: flex; gap: 0.25rem; }
+    .chrome-actions .zoom-btns button { min-width: 2rem; padding: 0; font-size: 1.05rem; }
+    .controls {
+      display: none;
+      position: absolute;
+      left: 0; right: 0;
+      top: calc(var(--safe-top) + 2.6rem);
+      z-index: 30;
+      background: var(--panel);
+      border-bottom: 1px solid rgba(15, 39, 68, 0.08);
+      padding: 0.65rem 0.75rem 0.75rem;
+      gap: 0.45rem;
+      max-height: min(70dvh, 420px);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      box-shadow: 0 14px 32px rgba(15,39,68,.16);
+    }
+    .controls.open { display: grid; }
+    html.night .controls { border-bottom-color: rgba(230,237,245,.08); }
+    .lbl {
+      display: grid; gap: 0.25rem; font-size: 0.65rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+    }
+    input[type="search"], select {
+      width: 100%; appearance: none; border: 1px solid rgba(15, 39, 68, 0.1);
+      border-radius: 0.7rem; padding: 0.55rem 0.75rem; font-size: 0.95rem;
+      background: var(--input-bg); color: var(--ink); text-transform: none; letter-spacing: normal;
+      font-weight: 600; font-family: inherit;
+    }
+    .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; }
+    .seg.three { grid-template-columns: 1fr 1fr 1fr; }
+    .seg button {
+      border: 1px solid rgba(15, 39, 68, 0.1); background: var(--input-bg); color: var(--ink);
+      border-radius: 0.65rem; padding: 0.45rem 0.3rem; font-size: 0.78rem; font-weight: 600;
+      min-height: 2.2rem; font-family: inherit;
+    }
+    .seg button.active {
+      background: linear-gradient(135deg, var(--accent), var(--sky));
+      border-color: transparent; color: #fff;
+    }
+    .switch-row { display: grid; gap: 0.4rem; }
+    .view-switch { justify-content: center; text-align: center; width: 100%; }
+    .hint { margin: 0; font-size: 0.72rem; color: var(--muted); line-height: 1.3; }
+    .stage {
+      grid-area: stage;
+      overflow: hidden;
+      min-height: 0;
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background: var(--stage-bg);
+    }
+    .viewport {
+      flex: 1 1 auto;
+      min-height: 0;
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior: contain;
+      /* permite pan nativo en X e Y en cualquier orientación */
+      touch-action: pan-x pan-y;
+      padding: 1rem;
+      cursor: grab;
+    }
+    .viewport.grabbing { cursor: grabbing; }
+    .canvas-sizer {
+      position: relative;
+      min-width: 100%;
+      min-height: 100%;
+      padding: 2rem; /* margen para poder scrollear “alrededor” del árbol */
+    }
+    .canvas {
+      transform-origin: top left;
+      width: max-content;
+      min-width: 100%;
+      transition: transform 0.15s ease;
+    }
+    .dock {
+      grid-area: dock;
+      background: var(--dock-bg); backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(15, 39, 68, 0.06);
+      padding: 0.25rem 0.35rem calc(0.25rem + var(--safe-bottom));
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.2rem;
+    }
+    html.night .dock { border-top-color: rgba(230,237,245,.08); }
+    .dock a, .dock button {
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.1rem;
+      min-height: 2.5rem; border: 0; background: transparent; color: var(--muted);
+      text-decoration: none; font-size: 0.62rem; font-weight: 600; border-radius: 0.65rem;
+      font-family: inherit;
+    }
+    .dock a.active, .dock button.active {
+      background: rgba(13, 159, 159, 0.12); color: var(--accent);
+    }
+    .dock .ico { font-size: 1rem; }
+    .sheet-backdrop {
+      position: fixed; inset: 0; background: rgba(15, 39, 68, 0.4);
+      opacity: 0; pointer-events: none; transition: opacity 0.2s ease; z-index: 40;
+    }
+    .sheet-backdrop.open { opacity: 1; pointer-events: auto; }
+    .sheet {
+      position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+      background: linear-gradient(160deg, #12304f 0%, #0f2744 100%);
+      color: #f4f8fc; border-radius: 1.25rem 1.25rem 0 0;
+      padding: 0.55rem 1rem calc(1.1rem + var(--safe-bottom));
+      transform: translateY(110%); transition: transform 0.25s ease;
+      max-height: 70dvh; overflow: auto;
+    }
+    .sheet.open { transform: translateY(0); }
+    .sheet-handle {
+      width: 2.5rem; height: 0.3rem; border-radius: 999px;
+      background: rgba(255, 255, 255, 0.28); margin: 0.2rem auto 0.75rem;
+    }
+    .sheet .sex { margin: 0; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--leaf); }
+    .sheet h2 { margin: 0.25rem 0 0.8rem; font-size: 1.2rem; font-family: "Outfit", sans-serif; font-weight: 600; }
+    .sheet dl { margin: 0; display: grid; gap: 0.55rem; }
+    .sheet dl div { display: grid; gap: 0.15rem; }
+    .sheet dt { color: #94a8bc; font-size: 0.75rem; }
+    .sheet dd { margin: 0; font-size: 0.95rem; }
+    .sheet-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 1rem; }
+    .sheet-actions button {
+      min-height: 2.75rem; border-radius: 0.8rem; border: 1px solid rgba(126, 231, 224, 0.4);
+      background: transparent; color: var(--leaf); font-weight: 600; font-family: inherit;
+    }
+    .sheet-actions button.primary {
+      background: linear-gradient(135deg, #0d9f9f, #3b82f6);
+      color: #fff; border-color: transparent;
+    }
+    .interactive-tree .tog { width: 2.35rem; height: 2.35rem; font-size: 0.95rem; }
+    .controls-backdrop {
+      display: none; position: absolute; inset: 0; z-index: 25;
+      background: rgba(15, 39, 68, 0.28);
+    }
+    .controls-backdrop.open { display: block; }
+    @media (orientation: landscape) {
+      .chrome { min-height: 2.25rem; padding: 0.3rem 0.5rem; }
+      .chrome h1 { font-size: 0.85rem; max-width: 40vw; }
+      .dock { display: none; } /* más espacio al árbol en horizontal */
+      .app {
+        grid-template-areas: "chrome" "stage";
+        grid-template-rows: auto minmax(0, 1fr);
+      }
+      .viewport { padding: 0.4rem 0.45rem 0.75rem; }
+      .controls { top: calc(var(--safe-top) + 2.25rem); max-height: 75dvh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="chrome">
+      <div>
+        <h1>Árbol familiar</h1>
+        <p class="meta" id="source">Familia Rodríguez</p>
+      </div>
+      <div class="chrome-actions">
+        <button type="button" id="nightToggle" aria-pressed="false" title="Modo noche">🌙</button>
+        <button type="button" id="toggleControls">Opciones</button>
+        <div class="zoom-btns">
+          <button type="button" id="zoomOut" aria-label="Alejar">−</button>
+          <button type="button" id="zoomReset">1×</button>
+          <button type="button" id="zoomIn" aria-label="Acercar">+</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="controls-backdrop" id="controlsBackdrop"></div>
+    <section class="controls" id="controlsPanel">
+      <label class="lbl">Buscar
+        <input id="search" type="search" placeholder="Nombre..." enterkeyhint="search" autocomplete="off" />
+      </label>
+      <label class="lbl">Persona raíz
+        <select id="rootSelect"></select>
+      </label>
+      <div class="seg" id="orientSeg">
+        <button type="button" class="active" data-orient="vertical">Vertical</button>
+        <button type="button" data-orient="horizontal">Horizontal</button>
+      </div>
+      <div class="seg three">
+        <button type="button" id="expandSome">Expandir</button>
+        <button type="button" id="collapseAll">Colapsar</button>
+        <button type="button" id="focusSearch">Buscar</button>
+      </div>
+      <p class="hint">▲ antepasados · ↔ hermanos · ▼ hijos · desliza o arrastra para mover</p>
+      <div class="seg">
+        <button type="button" id="nightTogglePanel">Modo noche</button>
+        <a class="view-switch" href="arbol-genealogico.html" style="min-height:2.2rem;justify-content:center">Escritorio</a>
+      </div>
+    </section>
+
+    <section class="stage">
+      <div class="viewport" id="viewport">
+        <div class="canvas-sizer" id="canvasSizer">
+          <div class="canvas" id="canvas">
+            <div id="tree" class="interactive-tree vertical"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="dock">
+      <button type="button" id="openOptionsDock"><span class="ico">⚙️</span>Opciones</button>
+      <a class="active" href="arbol-movil.html"><span class="ico">📲</span>Móvil</a>
+      <a href="arbol-genealogico.html"><span class="ico">💻</span>Escritorio</a>
+    </nav>
+  </div>
+
+  <div class="sheet-backdrop" id="backdrop"></div>
+  <aside class="sheet" id="sheet">
+    <div class="sheet-handle"></div>
+    <div id="sheetBody"></div>
+  </aside>
+
+  <script src="arbol-data.js"></script>
+  <script src="arbol-tree.js"></script>
+  <script>
+    const ui = window.FamilyTreeUI;
+    const treeEl = document.getElementById("tree");
+    const rootSelect = document.getElementById("rootSelect");
+    const canvas = document.getElementById("canvas");
+    const canvasSizer = document.getElementById("canvasSizer");
+    const viewport = document.getElementById("viewport");
+    const sheet = document.getElementById("sheet");
+    const backdrop = document.getElementById("backdrop");
+    const sheetBody = document.getElementById("sheetBody");
+    const controlsPanel = document.getElementById("controlsPanel");
+    const controlsBackdrop = document.getElementById("controlsBackdrop");
+    let scale = 1;
+
+    document.getElementById("source").textContent = ui.source;
+    ui.fillRootSelect(rootSelect);
+    ui.expandRootDefaults();
+    ui.bindContainer(treeEl);
+    ui.renderInto(treeEl);
+
+    function applyZoom() {
+      canvas.style.transform = `scale(${scale})`;
+      // El transform no cambia el layout: agrandamos el contenedor para poder hacer scroll
+      const w = Math.max(canvas.scrollWidth, canvas.offsetWidth, treeEl.scrollWidth || 0);
+      const h = Math.max(canvas.scrollHeight, canvas.offsetHeight, treeEl.scrollHeight || 0);
+      // margen extra para poder desplazar el árbol en cualquier dirección
+      const pad = 120;
+      canvasSizer.style.width = Math.max(viewport.clientWidth + pad, Math.ceil(w * scale) + pad * 2) + "px";
+      canvasSizer.style.height = Math.max(viewport.clientHeight + pad, Math.ceil(h * scale) + pad * 2) + "px";
+      const zr = document.getElementById("zoomReset");
+      if (zr) zr.textContent = scale === 1 ? "1×" : `${scale.toFixed(1)}×`;
+    }
+
+    // Arrastre con un dedo / mouse para panear (además del scroll nativo)
+    let pan = null;
+    viewport.addEventListener("pointerdown", (e) => {
+      if (e.pointerType === "touch" && e.isPrimary === false) return;
+      if (e.target.closest("button, a, input, select, .tog, .card")) return;
+      pan = {
+        id: e.pointerId,
+        x: e.clientX,
+        y: e.clientY,
+        left: viewport.scrollLeft,
+        top: viewport.scrollTop,
+      };
+      viewport.classList.add("grabbing");
+      try { viewport.setPointerCapture(e.pointerId); } catch (_) {}
+    });
+    viewport.addEventListener("pointermove", (e) => {
+      if (!pan || e.pointerId !== pan.id) return;
+      viewport.scrollLeft = pan.left - (e.clientX - pan.x);
+      viewport.scrollTop = pan.top - (e.clientY - pan.y);
+    });
+    function endPan(e) {
+      if (!pan || (e && e.pointerId !== pan.id)) return;
+      pan = null;
+      viewport.classList.remove("grabbing");
+    }
+    viewport.addEventListener("pointerup", endPan);
+    viewport.addEventListener("pointercancel", endPan);
+
+    function bumpZoom(delta) {
+      scale = Math.min(2.4, Math.max(0.4, +(scale + delta).toFixed(2)));
+      applyZoom();
+    }
+
+    function setControlsOpen(open) {
+      controlsPanel.classList.toggle("open", open);
+      controlsBackdrop.classList.toggle("open", open);
+      const btn = document.getElementById("toggleControls");
+      if (btn) btn.textContent = open ? "Cerrar" : "Opciones";
+    }
+
+    document.getElementById("toggleControls")?.addEventListener("click", () => {
+      setControlsOpen(!controlsPanel.classList.contains("open"));
+    });
+    document.getElementById("openOptionsDock")?.addEventListener("click", () => setControlsOpen(true));
+    controlsBackdrop?.addEventListener("click", () => setControlsOpen(false));
+
+    // Tras render, recalcular área de scroll
+    const _render = ui.renderInto.bind(ui);
+    ui.renderInto = (el) => { _render(el); requestAnimationFrame(applyZoom); };
+
+    function closeSheet() {
+      sheet.classList.remove("open");
+      backdrop.classList.remove("open");
+      ui.selectedId = null;
+      ui.renderInto(treeEl);
+    }
+
+    ui.onDetail((id) => {
+      const p = ui.getPerson(id);
+      if (!p) return;
+      sheetBody.innerHTML = `
+        <p class="sex">${p.sex === "male" ? "Hombre" : p.sex === "female" ? "Mujer" : "—"}</p>
+        <h2>${ui.escapeHtml(p.name)}</h2>
+        <dl>
+          <div><dt>Nacimiento</dt><dd>${ui.escapeHtml(p.birth || "—")}</dd></div>
+          <div><dt>Fallecimiento</dt><dd>${ui.escapeHtml(p.death || "—")}</dd></div>
+          <div><dt>Lugar de nacimiento</dt><dd>${ui.escapeHtml(p.birthPlace || "—")}</dd></div>
+          <div><dt>Lugar de fallecimiento</dt><dd>${ui.escapeHtml(p.deathPlace || "—")}</dd></div>
+        </dl>
+        <div class="sheet-actions">
+          <button type="button" class="primary" data-act="root">Usar como raíz</button>
+          <button type="button" data-act="close">Cerrar</button>
+        </div>`;
+      sheet.classList.add("open");
+      backdrop.classList.add("open");
+      sheetBody.querySelector('[data-act="close"]').onclick = closeSheet;
+      sheetBody.querySelector('[data-act="root"]').onclick = () => {
+        ui.setRoot(p.id, treeEl);
+        rootSelect.value = p.id;
+        closeSheet();
+        viewport.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      };
+    });
+
+    backdrop.addEventListener("click", closeSheet);
+    rootSelect.addEventListener("change", () => {
+      ui.setRoot(rootSelect.value, treeEl);
+      viewport.scrollTo({ top: 0, left: 0 });
+      setControlsOpen(false);
+    });
+
+    document.querySelectorAll("[data-orient]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-orient]").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        ui.setOrientation(btn.dataset.orient, treeEl);
+        setControlsOpen(false);
+      });
+    });
+
+    document.getElementById("expandSome").onclick = () => { ui.expandAllVisible(treeEl, 2); setControlsOpen(false); };
+    document.getElementById("collapseAll").onclick = () => { ui.collapseAll(treeEl); setControlsOpen(false); };
+    document.getElementById("zoomIn").onclick = () => bumpZoom(0.15);
+    document.getElementById("zoomOut").onclick = () => bumpZoom(-0.15);
+    document.getElementById("zoomReset").onclick = () => { scale = 1; applyZoom(); };
+    document.getElementById("focusSearch").onclick = () => {
+      setControlsOpen(true);
+      setTimeout(() => document.getElementById("search").focus(), 50);
+    };
+    window.addEventListener("orientationchange", () => {
+      setControlsOpen(false);
+      setTimeout(applyZoom, 300);
+    });
+    window.addEventListener("resize", () => applyZoom());
+    requestAnimationFrame(applyZoom);
+
+    const nightBtn = document.getElementById("nightToggle");
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    function syncNightButtons(on) {
+      nightBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      nightBtn.textContent = on ? "☀️" : "🌙";
+      const panelBtn = document.getElementById("nightTogglePanel");
+      if (panelBtn) panelBtn.textContent = on ? "Modo día" : "Modo noche";
+    }
+    function applyNight(on) {
+      document.documentElement.classList.toggle("night", on);
+      syncNightButtons(on);
+      if (themeMeta) themeMeta.setAttribute("content", on ? "#152032" : "#0d9f9f");
+      try { localStorage.setItem("familia-arbol-night", on ? "1" : "0"); } catch (_) {}
+    }
+    nightBtn.onclick = () => applyNight(!document.documentElement.classList.contains("night"));
+    document.getElementById("nightTogglePanel")?.addEventListener("click", () => {
+      applyNight(!document.documentElement.classList.contains("night"));
+    });
+    try { if (localStorage.getItem("familia-arbol-night") === "1") applyNight(true); } catch (_) {}
+
+    const search = document.getElementById("search");
+    search.addEventListener("input", () => {
+      const q = search.value.trim().toLowerCase();
+      [...rootSelect.options].forEach((o) => {
+        o.hidden = q.length > 1 && !o.textContent.toLowerCase().includes(q);
+      });
+    });
+    search.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter") return;
+      const q = search.value.trim().toLowerCase();
+      const hit = [...rootSelect.options].find((o) => !o.hidden && o.textContent.toLowerCase().includes(q));
+      if (!hit) return;
+      rootSelect.value = hit.value;
+      ui.setRoot(hit.value, treeEl);
+      [...rootSelect.options].forEach((o) => { o.hidden = false; });
+    });
+
+    // Pinch zoom
+    let pinchStartDist = 0, pinchStartScale = 1;
+    viewport.addEventListener("touchstart", (e) => {
+      if (e.touches.length === 2) {
+        const [a, b] = e.touches;
+        pinchStartDist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+        pinchStartScale = scale;
+      }
+    }, { passive: true });
+    viewport.addEventListener("touchmove", (e) => {
+      if (e.touches.length === 2 && pinchStartDist > 0) {
+        const [a, b] = e.touches;
+        const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+        scale = Math.min(2.2, Math.max(0.45, +(pinchStartScale * (dist / pinchStartDist)).toFixed(2)));
+        applyZoom();
+      }
+    }, { passive: true });
+    viewport.addEventListener("touchend", () => { pinchStartDist = 0; }, { passive: true });
+
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js").catch(() => {});
+    }
+  </script>
+</body>
+</html>

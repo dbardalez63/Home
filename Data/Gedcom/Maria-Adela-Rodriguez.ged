@@ -1,0 +1,4145 @@
+0 HEAD
+1 SUBM @SUBM1@
+1 SOUR Ancestry.com Family Trees
+2 NAME Ancestry.com Member Trees
+2 VERS 2025.08
+2 _TREE Maria Adela Rodriguez
+3 RIN 190954304
+3 _ENV prd
+2 CORP Ancestry.com
+3 PHON 801-705-7000
+3 WWW www.ancestry.com
+3 ADDR 1300 West Traverse Parkway
+4 CONT Lehi, UT  84043
+4 CONT USA
+1 DATE 19 Nov 2026
+2 TIME 01:50:48
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @SUBM1@ SUBM
+1 NAME Ancestry.com Member Trees Submitter
+0 @I122477342532@ INDI
+1 NAME Diego /Bardalez/
+2 GIVN Diego
+2 SURN Bardalez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHD5
+3 _APID 1,60121::3463329
+1 SEX M
+1 SEX M
+1 FAMC @F48@
+1 FAMS @F19@
+1 FAMS @F65@
+1 BIRT
+2 DATE 7 Jun 1963
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHD5
+2 _APID 1,60121::3463329
+0 @I122477342971@ INDI
+1 NAME MarÃ­a Adela /RodrÃ­guez RodrÃ­guez/
+2 GIVN MarÃ­a Adela
+2 SURN RodrÃ­guez RodrÃ­guez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-6KZS
+3 _APID 1,60121::12004203
+1 NAME Maria Adela /Rodriguez/
+2 GIVN Maria Adela
+2 SURN Rodriguez
+1 SEX F
+1 SEX F
+1 FAMC @F28@
+1 FAMS @F48@
+1 FAMS @F35@
+1 BIRT
+2 DATE 7 Apr 1929
+2 PLAC Iquitos, Loreto, Peru
+1 BIRT
+2 DATE 7 Apr 1929
+2 PLAC Iquitos, Loreto, Peru
+1 DEAT
+2 DATE 15 Aug 2021
+2 PLAC Iquitos, Loreto, Peru
+1 DEAT
+2 DATE 15 Aug 2021
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-6KZS
+2 _APID 1,60121::12004203
+0 @I122477351500@ INDI
+1 NOTE ArbolYoly.txt: N 04.04.1905 Iquitos; F 13.02.1950 Iquitos (44 anos).
+1 NAME Francisca /Rodriguez Sifuentes/
+2 GIVN Francisca
+2 SURN Rodriguez Sifuentes
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SEX F
+1 SEX F
+1 FAMC @F30@
+1 FAMS @F28@
+1 BIRT
+2 DATE 4 Apr 1905
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 BIRT
+2 DATE 3 Apr 1905
+2 PLAC Iquitos, Loreto, Peru
+1 BIRT
+2 DATE 4 Apr 1905
+2 PLAC Iquitos, Loreto, Peru
+1 DEAT
+2 DATE 13 Feb 1950
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 13 Feb 1950
+2 PLAC Iquitos, Loreto, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 132710671729:1030:205822403
+2 _APID 192821819881:1030:213170285
+2 _APID 332651754195:1030:202431535
+0 @I122477351804@ INDI
+1 NOTE ArbolYoly.txt: F 09.03.1993. Parejas: Mercedes Diaz Piadoso, Francisca Rodriguez Sifuentes, Tesalia Torres.
+1 NAME Telesforo /Rodriguez Fernandez/
+2 GIVN Telesforo
+2 SURN Rodriguez Fernandez
+1 NAME odilio /rodriguez alvarez/
+2 GIVN odilio
+2 SURN rodriguez alvarez
+1 SEX M
+1 FAMC @F18@
+1 FAMS @F28@
+1 FAMS @F23@
+1 FAMS @F29@
+1 BIRT
+2 DATE 12 Ago 1900
+2 PLAC Iquitos, Loreto, Peru
+1 BIRT
+2 DATE 10 Aug 1900
+2 PLAC Maynas, Loreto, Peru
+1 BIRT
+2 PLAC rivadavia, Galicia, Spain
+1 DEAT
+2 DATE 9 Mar 1993
+2 PLAC Iquitos, Loreto, Peru
+1 DEAT
+2 DATE 13 Mar 1993
+2 PLAC Maynas, Loreto, Peru
+1 DEAT
+2 DATE 6 Dec 1940
+2 PLAC Iquitos, Loreto, Peru
+0 @I122814864601@ INDI
+1 NAME Diego Claudio /Alvarado Renteria/
+2 GIVN Diego Claudio
+2 SURN Alvarado Renteria
+1 SEX M
+1 FAMS @F48@
+1 BIRT
+2 DATE 12 Nov 1924
+2 PLAC Tumbes, Tumbes, Peru
+1 DEAT
+2 DATE 3 Jul 2024
+2 PLAC Lima, Lima, Peru
+0 @I122815865406@ INDI
+1 NAME Carolina Vanessa /Bardales Rubina/
+2 GIVN Carolina Vanessa
+2 SURN Bardales Rubina
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHDP
+3 _APID 1,60121::3463333
+2 SOUR @S233192523@
+3 PAGE Australian Business Register; Canberra, Australia; URL: https://data.gov.au/dataset/ds-dga-5bd7fcab-e315-42cb-8daf-50b7efc2027e/details
+3 DATA
+4 WWW https://abr.business.gov.au/Tools/WebServices
+3 _APID 1,62451::9426648
+1 SEX F
+1 FAMC @F19@
+1 FAMS @F8@
+1 BIRT
+2 DATE 5 Sept 1990
+2 PLAC Lima, Lima, Lima, Peru
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHDP
+3 _APID 1,60121::3463333
+1 RESI
+2 PLAC New South Wales
+2 SOUR @S233192523@
+3 PAGE Australian Business Register; Canberra, Australia; URL: https://data.gov.au/dataset/ds-dga-5bd7fcab-e315-42cb-8daf-50b7efc2027e/details
+3 DATA
+4 WWW https://abr.business.gov.au/Tools/WebServices
+3 _APID 1,62451::9426648
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHDP
+2 _APID 1,60121::3463333
+1 SOUR @S233192523@
+2 PAGE Australian Business Register; Canberra, Australia; URL: https://data.gov.au/dataset/ds-dga-5bd7fcab-e315-42cb-8daf-50b7efc2027e/details
+2 DATA
+3 WWW https://abr.business.gov.au/Tools/WebServices
+2 _APID 1,62451::9426648
+0 @I122815865407@ INDI
+1 NAME Maria Elena /Rubina Valle/
+2 GIVN Maria Elena
+2 SURN Rubina Valle
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHDR
+3 _APID 1,60121::3463336
+1 SEX F
+1 FAMC @F34@
+1 FAMS @F19@
+1 BIRT
+2 DATE 17 Sep 1970
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QK81-NHDR
+2 _APID 1,60121::3463336
+0 @I122815865563@ INDI
+1 NAME Sebastian /Bardalez/
+2 GIVN Sebastian
+2 SURN Bardalez
+1 SEX M
+1 FAMC @F19@
+1 FAMS @F53@
+1 BIRT
+2 DATE 27 Apr 1997
+2 PLAC San Isidro, Lima, Peru
+0 @I122815865658@ INDI
+1 NAME Diego Luis /Bardalez Plaza/
+2 GIVN Diego Luis
+2 SURN Bardalez Plaza
+1 SEX M
+1 FAMC @F65@
+1 FAMS @F17@
+1 BIRT
+2 DATE 3 Dec 1987
+2 PLAC callao, Lima, Peru
+0 @I122815865828@ INDI
+1 NOTE ArbolYoly.txt: nacido Odilon Alvarez Gonzalez (madre soltera). F 06.12.1940 Hospital Santa Rosa de Itaya (cancer de colon).
+1 NAME Odilio /Rodriguez Alvarez/
+2 GIVN Odilio
+2 SURN Rodriguez Alvarez
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7PXJ-Q72M
+3 _APID 1,62851::36153
+1 SEX M
+1 FAMC @F15@
+1 FAMS @F30@
+1 FAMS @F37@
+1 BIRT
+2 DATE 5 Aug 1881
+2 PLAC Ribadavia, Orense, Galicia, Spain
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7PXJ-Q72M
+3 _APID 1,62851::36153
+1 DEAT
+2 DATE 6 Dec 1940
+2 PLAC Maynas, Loreto, Peru
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7PXJ-Q72M
+3 _APID 1,62851::36153
+1 BURI
+2 DATE 6 Dic 1940
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7PXJ-Q72M
+3 _APID 1,62851::36153
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 132711447265:1030:205822403
+1 SOUR @S233192701@
+2 DATA
+3 WWW https://familysearch.org/ark:/61903/1:2:7PXJ-Q72M
+2 _APID 1,62851::36153
+0 @I122815865891@ INDI
+1 FAMC @FYOLY03@
+1 NOTE ArbolYoly.txt: Rosalia Cifuentes Vasquez (costurera). Medio hermano Emilio Pinedo Vasquez (Yurimaguas).
+1 NAME Rosalia /Sifuentes Vasquez/
+2 GIVN Rosalia
+2 SURN Sifuentes Vasquez
+1 SEX F
+1 FAMS @F30@
+1 FAMS @F31@
+1 FAMS @F32@
+1 FAMS @F33@
+1 FAMS @F74@
+1 BIRT
+2 DATE 10 Feb 1868
+2 PLAC Moyobamba, San Martin, Peru
+1 DEAT
+2 DATE 9 Feb 1928
+2 PLAC Maynas, Loreto, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816677697:1030:19521236
+2 _APID 132711447455:1030:205822403
+2 _APID 292511113689:1030:185465837
+1 SOUR @S233262417@
+2 _APID 1,62476::7561809683
+0 @I122815866090@ INDI
+1 NOTE ArbolYoly.txt cuestiona identidad alemana. Suegro tambien citado como Vicente Rodriguez Riva (F 20.02.1919 tuberculosis).
+1 NAME Vicent Gerhart /Von Brandenburg Halbach/
+2 GIVN Vicent Gerhart
+2 SURN Von Brandenburg Halbach
+1 SEX M
+1 FAMS @F18@
+1 BIRT
+2 DATE 1875
+2 PLAC Germany
+0 @I122815866172@ INDI
+1 FAMC @FYOLY02@
+1 NOTE ArbolYoly.txt: N 11.08.1877 Calzada Moyobamba; F 06.06.1944 Iquitos.
+1 DEAT
+2 DATE 6 Jun 1944
+2 PLAC Iquitos, Loreto, Peru
+1 NAME Susana /Fernandez Acosta/
+2 GIVN Susana
+2 SURN Fernandez Acosta
+1 SEX F
+1 FAMS @F18@
+1 FAMS @F64@
+1 BIRT
+2 DATE 11 Aug 1877
+2 PLAC Calzada, Moyobamba, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 182586685578:1030:198606486
+2 _APID 270076913831:1030:109900665
+2 _APID 422644729306:1030:202494954
+0 @I122815866723@ INDI
+1 NAME Luis Miguel /Bardales Rodriguez/
+2 GIVN Luis Miguel
+2 SURN Bardales Rodriguez
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7L4Y-L86Z
+3 _APID 1,62851::71647
+1 SEX M
+1 FAMC @F35@
+1 BIRT
+2 DATE 7 Nov 1956
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7L4Y-L86Z
+3 _APID 1,62851::71647
+1 DEAT
+2 DATE 26 Sep 1973
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7L4Y-L86Z
+3 _APID 1,62851::71647
+1 BURI
+2 DATE 26 Sept 1973
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+2 SOUR @S233192701@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:2:7L4Y-L86Z
+3 _APID 1,62851::71647
+1 SOUR @S233192701@
+2 DATA
+3 WWW https://familysearch.org/ark:/61903/1:2:7L4Y-L86Z
+2 _APID 1,62851::71647
+0 @I122815866936@ INDI
+1 NAME Orla Ines /Bardales Rodriguez/
+2 GIVN Orla Ines
+2 SURN Bardales Rodriguez
+1 SEX F
+1 FAMC @F35@
+1 FAMS @F16@
+1 BIRT
+2 DATE 25 Jan 1954
+0 @I122815867021@ INDI
+1 NAME Yolanda Elena //
+2 GIVN Yolanda Elena
+1 SEX F
+1 FAMC @F35@
+1 FAMS @F7@
+1 BIRT
+2 DATE 15 Aug 1960
+0 @I122815867416@ INDI
+1 NAME Juan Miguel /BARDALES CASIANO/
+2 GIVN Juan Miguel
+2 SURN BARDALES CASIANO
+1 SEX M
+1 FAMS @F35@
+1 BIRT
+2 DATE 1926
+0 @I122815867921@ INDI
+1 NAME Hector /Carneiro Pucho/
+2 GIVN Hector
+2 SURN Carneiro Pucho
+1 SEX M
+1 FAMS @F16@
+0 @I122815867969@ INDI
+1 NAME Diana /Carneiro Bardales/
+2 GIVN Diana
+2 SURN Carneiro Bardales
+1 SEX F
+1 FAMC @F16@
+0 @I122815868012@ INDI
+1 NAME Erfurt /Castillo Vera/
+2 GIVN Erfurt
+2 SURN Castillo Vera
+1 SEX M
+1 FAMS @F7@
+1 BIRT
+2 DATE 20 Sep 1952
+2 PLAC Talara, Piura, Peru
+0 @I122815868158@ INDI
+1 NAME Aurelio Oscar /Rubina CalderÃ³n/
+2 GIVN Aurelio Oscar
+2 SURN Rubina CalderÃ³n
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q3MT
+3 _APID 1,60121::8259887
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-Z596
+3 _APID 1,60121::11874138
+1 SEX M
+1 FAMC @F57@
+1 FAMS @F34@
+1 BIRT
+2 DATE 4 Jun 1927
+2 PLAC Peru, Lima, Lima, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 27 Jun 2005
+2 PLAC Peru, Lima, Lima, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 192821819493:1030:213170285
+2 _APID 332651146193:1030:202431535
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q3MT
+2 _APID 1,60121::8259887
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-Z596
+2 _APID 1,60121::11874138
+0 @I122815868195@ INDI
+1 NAME Amanda Telecila /Valle de Rubina/
+2 GIVN Amanda Telecila
+2 SURN Valle de Rubina
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C73-YJN
+3 _APID 1,60121::1599806
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-6QWP
+3 _APID 1,60121::11834330
+1 SEX F
+1 FAMC @F66@
+1 FAMS @F34@
+1 BIRT
+2 DATE 19 Apr 1940
+2 PLAC Peru, Lima, Lima, Peru
+1 DEAT
+2 DATE 11 Oct 2024
+2 PLAC Peru, Lima, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332651146101:1030:202431535
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C73-YJN
+2 _APID 1,60121::1599806
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-6QWP
+2 _APID 1,60121::11834330
+0 @I122815868255@ INDI
+1 NAME Ana Sofia /Rubina Valle/
+2 GIVN Ana Sofia
+2 SURN Rubina Valle
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C73-YJJ
+3 _APID 1,60121::1599821
+1 SEX F
+1 FAMC @F34@
+1 BIRT
+2 DATE 19 Jul 1969
+2 PLAC Lima, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C73-YJJ
+3 _APID 1,60121::1599821
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C73-YJJ
+2 _APID 1,60121::1599821
+0 @I122815868313@ INDI
+1 NAME Ina MarÃ­a /Rubina Valle/
+2 GIVN Ina MarÃ­a
+2 SURN Rubina Valle
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-Z59Z
+3 _APID 1,60121::11874140
+1 SEX F
+1 FAMC @F34@
+1 BIRT
+2 DATE 17 Sept 1975
+2 PLAC JesÃºs MarÃ­a, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-Z59Z
+3 _APID 1,60121::11874140
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-Z59Z
+2 _APID 1,60121::11874140
+0 @I122815868343@ INDI
+1 NAME Jose Luis /Rubina Valle/
+2 GIVN Jose Luis
+2 SURN Rubina Valle
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-G7M9
+3 _APID 1,60121::11447498
+1 SEX M
+1 FAMC @F34@
+1 BIRT
+2 DATE 1974
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-G7M9
+3 _APID 1,60121::11447498
+1 DEAT
+2 DATE 22 Feb 1993
+2 PLAC San Juan de Miraflores, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-G7M9
+3 _APID 1,60121::11447498
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-G7M9
+2 _APID 1,60121::11447498
+0 @I122815868395@ INDI
+1 NAME Jeremias /Valle/
+2 GIVN Jeremias
+2 SURN Valle
+1 SEX F
+1 FAMS @F66@
+1 DEAT
+2 PLAC Peru, Lima, Lima, Peru
+0 @I122815868526@ INDI
+1 NAME Hayden /Smith/
+2 GIVN Hayden
+2 SURN Smith
+1 SEX M
+1 FAMS @F8@
+0 @I122815868572@ INDI
+1 NAME Kate /McGrath/
+2 GIVN Kate
+2 SURN McGrath
+1 SEX F
+1 FAMS @F53@
+0 @I122815868633@ INDI
+1 NAME Rayne /Bardalez McGrath/
+2 GIVN Rayne
+2 SURN Bardalez McGrath
+1 SEX F
+1 FAMC @F53@
+1 BIRT
+2 DATE 21 Feb 2022
+2 PLAC Sydney, New South Wales, Australia
+0 @I122815868762@ INDI
+1 NAME Ares /Bardalez McGrath/
+2 GIVN Ares
+2 SURN Bardalez McGrath
+1 SEX M
+1 FAMC @F53@
+1 BIRT
+2 DATE 7 Feb 2024
+2 PLAC Sydney, New South Wales, Australia
+0 @I122815868843@ INDI
+1 NAME Cyrah /Bardalez Smith/
+2 GIVN Cyrah
+2 SURN Bardalez Smith
+1 SEX F
+1 FAMC @F8@
+1 BIRT
+2 DATE 15 Mar 2022
+2 PLAC Sydney, New South Wales, Australia
+0 @I122815868937@ INDI
+1 NAME Hades /Bardalez Smith/
+2 GIVN Hades
+2 SURN Bardalez Smith
+1 SEX M
+1 FAMC @F8@
+1 BIRT
+2 DATE 10 Dec 2023
+2 PLAC Sydney, New South Wales, Australia
+0 @I122815869095@ INDI
+1 NAME Roselyn /Tazza/
+2 GIVN Roselyn
+2 SURN Tazza
+1 SEX F
+1 FAMS @F17@
+0 @I122815869164@ INDI
+1 NAME Rodrigo /Bardalez Tazza/
+2 GIVN Rodrigo
+2 SURN Bardalez Tazza
+1 SEX M
+1 FAMC @F17@
+1 BIRT
+2 DATE 19 Aug 2013
+2 PLAC Lima, Lima, Peru
+0 @I122815869317@ INDI
+1 NAME Samanta /Bardalez Tazza/
+2 GIVN Samanta
+2 SURN Bardalez Tazza
+1 SEX F
+1 FAMC @F17@
+1 BIRT
+2 DATE 23 Apr 2025
+2 PLAC Lima, Peru
+0 @I122815869371@ INDI
+1 NAME Julieta /Bardalez Tazza/
+2 GIVN Julieta
+2 SURN Bardalez Tazza
+1 SEX F
+1 FAMC @F17@
+1 BIRT
+2 DATE 10 Jan 2024
+2 PLAC Lima, Lima, Peru
+0 @I122815870791@ INDI
+1 NAME Jose Demetrio /Rodriguez Fernandez/
+2 GIVN Jose Demetrio
+2 SURN Rodriguez Fernandez
+1 SEX M
+1 FAMC @F64@
+1 BIRT
+2 DATE 16 Apr 1895
+2 PLAC Moyobamba, San Martin, Peru
+1 DEAT
+2 DATE 17 May 1965
+2 PLAC Iquitos, Loreto, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 182586684250:1030:198606486
+2 _APID 270076913824:1030:109900665
+2 _APID 422644728467:1030:202494954
+0 @I122815871773@ INDI
+1 NAME Antonio /Rodriguez Gonzales/
+2 GIVN Antonio
+2 SURN Rodriguez Gonzales
+1 SEX M
+1 FAMC @F40@
+1 FAMS @F15@
+1 DEAT
+2 DATE 1855
+2 PLAC Ribadavia, Orense, Galicia, Spain
+0 @I122815871828@ INDI
+1 NAME Juana /Alvarez Gonzales/
+2 GIVN Juana
+2 SURN Alvarez Gonzales
+1 SEX F
+1 FAMC @F2@
+1 FAMS @F15@
+1 DEAT
+2 DATE 1855
+2 PLAC Ribadavia, Orense, Galicia, Spain
+0 @I122815871862@ INDI
+1 NAME Antonio /Alvarez Noriega/
+2 GIVN Antonio
+2 SURN Alvarez Noriega
+1 SEX M
+1 FAMS @F2@
+1 BIRT
+2 PLAC Castrelo de MiÃ±o, Orense, Galicia, Spain
+1 DEAT
+2 DATE 1810
+2 PLAC Spain
+0 @I122815871925@ INDI
+1 NAME Josefa /Gonzales Briabi/
+2 GIVN Josefa
+2 SURN Gonzales Briabi
+1 SEX F
+1 FAMS @F2@
+1 DEAT
+2 DATE 1812
+2 PLAC Spain
+0 @I122815871970@ INDI
+1 NAME Baltasar /Rodriguez Granero/
+2 GIVN Baltasar
+2 SURN Rodriguez Granero
+1 SEX M
+1 FAMS @F40@
+1 DEAT
+2 PLAC Spain
+0 @I122815872013@ INDI
+1 NAME Eulalia /Gonzales y Gonzales/
+2 GIVN Eulalia
+2 SURN Gonzales y Gonzales
+1 SEX F
+1 FAMS @F40@
+1 DEAT
+2 PLAC Spain
+0 @I122815872303@ INDI
+1 NAME Teresa de Jesus /Rodriguez Rodriguez/
+2 GIVN Teresa de Jesus
+2 SURN Rodriguez Rodriguez
+1 SEX F
+1 FAMC @F28@
+1 BIRT
+2 DATE 3 Jun 1935
+2 PLAC Maynas, Loreto, Peru
+1 DEAT
+2 DATE 10 Mar 2017
+2 PLAC Tampa, Hillsborough, Florida, USA
+0 @I122815872396@ INDI
+1 NAME Luis Eduardo /Rodriguez Rodriguez/
+2 GIVN Luis Eduardo
+2 SURN Rodriguez Rodriguez
+1 SEX M
+1 FAMC @F28@
+1 BIRT
+2 DATE 28 Feb 1931
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+1 DEAT
+2 DATE 16 Jan 2025
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+0 @I122815872567@ INDI
+1 NAME Antonio Odilo /Rodriguez Rodriguez/
+2 GIVN Antonio Odilo
+2 SURN Rodriguez Rodriguez
+1 SEX M
+1 FAMC @F28@
+1 BIRT
+2 DATE 25 May 1944
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 2024
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332780998664:1030:210434013
+0 @I122815872689@ INDI
+1 NAME Julio Cesar /Rodriguez Rodriguez/
+2 GIVN Julio Cesar
+2 SURN Rodriguez Rodriguez
+1 SEX M
+1 FAMC @F28@
+1 BIRT
+2 DATE 18 Jun 1942
+2 PLAC Iquitos, Loreto, Peru
+0 @I122815872768@ INDI
+1 NOTE ArbolYoly.txt: N ~1939; F 18.05.1940 (~2 anos).
+1 NAME Olga Marina /Rodriguez Rodriguez/
+2 GIVN Olga Marina
+2 SURN Rodriguez Rodriguez
+1 SEX F
+1 FAMC @F28@
+1 BIRT
+2 DATE ABT 1939
+2 PLAC Iquitos, Loreto, Peru
+1 DEAT
+2 DATE 18 May 1940
+2 PLAC Iquitos, Loreto, Peru
+0 @I122815872925@ INDI
+1 NAME Rosa Angelica /Rodriguez Rodriguez/
+2 GIVN Rosa Angelica
+2 SURN Rodriguez Rodriguez
+1 SEX F
+1 FAMC @F28@
+1 BIRT
+2 DATE 30 Aug 1927
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+0 @I122815873703@ INDI
+1 NAME Celso /Rufina/
+2 GIVN Celso
+2 SURN Rufina
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q39W
+3 _APID 1,60121::8259884
+1 SEX M
+1 FAMS @F57@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 192821819812:1030:213170285
+2 _APID 332651394529:1030:202431535
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q39W
+2 _APID 1,60121::8259884
+0 @I122815873704@ INDI
+1 NAME Maria /Calderon/
+2 GIVN Maria
+2 SURN Calderon
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q398
+3 _APID 1,60121::8259885
+1 SEX F
+1 FAMS @F57@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 192821819813:1030:213170285
+2 _APID 332651394547:1030:202431535
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-Q398
+2 _APID 1,60121::8259885
+0 @I122815880609@ INDI
+1 NAME Maria Isabel /Rodriguez Rodriguez/
+2 GIVN Maria Isabel
+2 SURN Rodriguez Rodriguez
+2 SOUR @S233193716@
+3 PAGE The National Archives in Washington, DC; Washington, DC, USA; Petitions For Naturalization, 8/6/1903 - 12/29/1911; NAI Number: 605504; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: Records of D
+4 CONC istrict 
+3 _APID 1,3998::2484167
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7TR
+3 _APID 1,60121::1637283
+1 SEX F
+1 FAMC @F28@
+1 FAMS @F55@
+1 BIRT
+2 DATE 13 Nov 1946
+2 PLAC Iquitos, Maynas, Loreto, PerÃº
+1 SOUR @S233193716@
+2 PAGE The National Archives in Washington, DC; Washington, DC, USA; Petitions For Naturalization, 8/6/1903 - 12/29/1911; NAI Number: 605504; Record Group Title: Records of District Courts of the United States, 1685-2009; Record Group Number: Records of D
+3 CONC istrict 
+2 _APID 1,3998::2484167
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7TR
+2 _APID 1,60121::1637283
+0 @I122815880634@ INDI
+1 NAME Mariella Elizabeth /Ruiz Rodriguez/
+2 GIVN Mariella Elizabeth
+2 SURN Ruiz Rodriguez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7TT
+3 _APID 1,60121::1637252
+1 SEX F
+1 FAMC @F55@
+1 BIRT
+2 DATE 11 Dic 1968
+2 PLAC Lima, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7TT
+3 _APID 1,60121::1637252
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7TT
+2 _APID 1,60121::1637252
+0 @I122815880635@ INDI
+1 NAME Roberto /Ruiz Ruiz/
+2 GIVN Roberto
+2 SURN Ruiz Ruiz
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7T5
+3 _APID 1,60121::1637268
+1 SEX M
+1 FAMS @F55@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7H-7T5
+2 _APID 1,60121::1637268
+0 @I122816586786@ INDI
+1 NAME Mercedes /Diaz Piadoso/
+2 GIVN Mercedes
+2 SURN Diaz Piadoso
+1 SEX F
+1 FAMS @F23@
+0 @I122816586987@ INDI
+1 NAME Tesalia /Torres/
+2 GIVN Tesalia
+2 SURN Torres
+1 SEX F
+1 FAMS @F29@
+0 @I122816587065@ INDI
+1 NAME Susana /Rodriguez Diaz/
+2 GIVN Susana
+2 SURN Rodriguez Diaz
+1 SEX F
+1 FAMC @F23@
+1 FAMS @F26@
+0 @I122816587150@ INDI
+1 NAME Elias /Rodriguez Diaz/
+2 GIVN Elias
+2 SURN Rodriguez Diaz
+1 SEX M
+1 FAMC @F23@
+1 FAMS @F73@
+0 @I122816587199@ INDI
+1 NAME Rosa Albina /Rodriguez Diaz/
+2 GIVN Rosa Albina
+2 SURN Rodriguez Diaz
+1 SEX F
+1 FAMC @F23@
+0 @I122816587254@ INDI
+1 NAME Marcelino /Briones/
+2 GIVN Marcelino
+2 SURN Briones
+1 SEX M
+1 FAMS @F26@
+0 @I122816587313@ INDI
+1 NAME Alicia Marina /Briones Rodriguez/
+2 GIVN Alicia Marina
+2 SURN Briones Rodriguez
+1 SEX F
+1 FAMC @F26@
+1 BIRT
+2 DATE 25 Mar 1944
+0 @I122816587368@ INDI
+1 NAME Martha Angelica /Briones Rodriguez/
+2 GIVN Martha Angelica
+2 SURN Briones Rodriguez
+1 SEX F
+1 FAMC @F26@
+1 BIRT
+2 DATE 7 Apr 1947
+0 @I122816587458@ INDI
+1 NAME Rosa Matilde /Rodriguez del Solar/
+2 GIVN Rosa Matilde
+2 SURN Rodriguez del Solar
+1 SEX F
+1 FAMC @F73@
+0 @I122816587522@ INDI
+1 NAME Ofelia Ines /Rodriguez Rodriguez/
+2 GIVN Ofelia Ines
+2 SURN Rodriguez Rodriguez
+1 SEX F
+1 FAMC @F28@
+1 BIRT
+2 DATE 19 Feb 1933
+0 @I122816587630@ INDI
+1 NAME Julia Francisca /Rodriguez Rodriguez/
+2 GIVN Julia Francisca
+2 SURN Rodriguez Rodriguez
+1 SEX F
+1 FAMC @F28@
+1 BIRT
+2 DATE 24 May 1937
+0 @I122816587787@ INDI
+1 NAME Elisa /Ospina Zevallos/
+2 GIVN Elisa
+2 SURN Ospina Zevallos
+1 SEX F
+1 FAMS @F37@
+0 @I122816587852@ INDI
+1 NAME Elisa Orosia /Rodriguez Ospina/
+2 GIVN Elisa Orosia
+2 SURN Rodriguez Ospina
+1 SEX F
+1 FAMC @F37@
+1 BIRT
+2 DATE 1918
+0 @I122816587874@ INDI
+1 NAME Juanita Amelia /Rodriguez Ospina/
+2 GIVN Juanita Amelia
+2 SURN Rodriguez Ospina
+1 SEX F
+1 FAMC @F37@
+1 BIRT
+2 DATE 21 Oct 1921
+1 DEAT
+2 DATE 6 Feb 1997
+0 @I122816588071@ INDI
+1 NAME Aldo Enrique /Rodriguez Ospina/
+2 GIVN Aldo Enrique
+2 SURN Rodriguez Ospina
+1 SEX M
+1 FAMC @F37@
+1 FAMS @F10@
+1 BIRT
+2 DATE 5 Apr 1925
+0 @I122816588149@ INDI
+1 NAME Juana Elisabeth Betty /Villarreal Ugaz/
+2 GIVN Juana Elisabeth Betty
+2 SURN Villarreal Ugaz
+1 SEX F
+1 FAMS @F10@
+0 @I122816588197@ INDI
+1 NAME Oswaldo Enrique /Rodriguez Villarreal/
+2 GIVN Oswaldo Enrique
+2 SURN Rodriguez Villarreal
+1 SEX M
+1 FAMC @F10@
+1 BIRT
+2 DATE 20 Jun 1962
+0 @I122816588236@ INDI
+1 NAME Aldo Antonio /Rodriguez Villarreal/
+2 GIVN Aldo Antonio
+2 SURN Rodriguez Villarreal
+1 SEX M
+1 FAMC @F10@
+1 BIRT
+2 DATE 14 04 1962
+0 @I122816744237@ INDI
+1 NAME Cesar Aurelio /Rodriguez Torres/
+2 GIVN Cesar Aurelio
+2 SURN Rodriguez Torres
+1 SEX M
+1 FAMC @F29@
+1 BIRT
+2 DATE 23 Jun 1957
+0 @I122816744311@ INDI
+1 NAME Nestor /Rodriguez Torres/
+2 GIVN Nestor
+2 SURN Rodriguez Torres
+1 SEX M
+1 FAMC @F29@
+1 BIRT
+2 DATE 5 Aug 1958
+0 @I122816744392@ INDI
+1 NAME Victor Raul /Rodriguez Torres/
+2 GIVN Victor Raul
+2 SURN Rodriguez Torres
+1 SEX M
+1 FAMC @F29@
+1 BIRT
+2 DATE 20 Feb 1960
+0 @I122816744500@ INDI
+1 NAME Cora /Rodriguez Torres/
+2 GIVN Cora
+2 SURN Rodriguez Torres
+1 SEX F
+1 FAMC @F29@
+1 BIRT
+2 DATE 11 Jul 1963
+0 @I122816746394@ INDI
+1 NAME Antonio /Rodriguez Alvarez/
+2 GIVN Antonio
+2 SURN Rodriguez Alvarez
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJB-6VRG
+3 _APID 1,9799::2764521
+1 SEX M
+1 FAMC @F15@
+1 FAMS @F50@
+1 BIRT
+2 DATE 2 Dec 1874
+2 PLAC Ribadavia, Orense, Galicia, Spain
+1 DEAT
+2 DATE 1934
+2 PLAC Santos, Sao Paulo, Brazil
+1 SOUR @S233249656@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGJB-6VRG
+2 _APID 1,9799::2764521
+0 @I122816756723@ INDI
+1 NAME Alayde Jandyra /Gomes/
+2 GIVN Alayde Jandyra
+2 SURN Gomes
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4YP
+3 _APID 1,9799::2764520
+1 SEX F
+1 FAMC @F60@
+1 FAMS @F50@
+1 BIRT
+2 DATE 1894
+1 SOUR @S233249656@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4YP
+2 _APID 1,9799::2764520
+0 @I122816756841@ INDI
+1 NAME Fernando /Rodriguez/
+2 GIVN Fernando
+2 SURN Rodriguez
+1 SEX M
+1 FAMC @F50@
+1 BIRT
+2 DATE 1930
+2 PLAC Rio de Janeiro, Brazil
+0 @I122816756936@ INDI
+1 NAME Maria do Carmo /Sobreira de Souza/
+2 GIVN Maria do Carmo
+2 SURN Sobreira de Souza
+1 SEX F
+1 FAMC @F50@
+0 @I122816756987@ INDI
+1 NAME Maitena /Rodriguez/
+2 GIVN Maitena
+2 SURN Rodriguez
+1 SEX F
+1 FAMC @F50@
+1 BIRT
+2 DATE 1928
+0 @I122816757968@ INDI
+1 NAME Emilio /Pinedo Vasquez/
+2 GIVN Emilio
+2 SURN Pinedo Vasquez
+1 SEX M
+1 FAMS @F31@
+0 @I122816758188@ INDI
+1 NAME Alejandro Joaquin /Bartra Sifuentes/
+2 GIVN Alejandro Joaquin
+2 SURN Bartra Sifuentes
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-6T64
+3 _APID 1,60121::7190331
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+sifuentes&oc=&p=alejandro
+3 _APID 1,62476::7561807053
+1 SEX M
+1 FAMC @F32@
+1 FAMS @F56@
+1 FAMS @F63@
+1 BIRT
+2 DATE 1900
+2 PLAC Loreto, Loreto, PÃ©rou
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-6T64
+3 _APID 1,60121::7190331
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+sifuentes&oc=&p=alejandro
+3 _APID 1,62476::7561807053
+1 DEAT
+2 DATE 19 Jul 1958
+2 PLAC Magdalena del Mar, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-6T64
+3 _APID 1,60121::7190331
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+sifuentes&oc=&p=alejandro
+3 _APID 1,62476::7561807053
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816623908:1030:19521236
+2 _APID 102654295877:1030:196505720
+2 _APID 292511113609:1030:185465837
+2 _APID 422394274120:1030:183674288
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-6T64
+2 _APID 1,60121::7190331
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+sifuentes&oc=&p=alejandro
+2 _APID 1,62476::7561807053
+0 @I122816758258@ INDI
+1 NAME Manuel Santiago /Bartra Villacorta/
+2 GIVN Manuel Santiago
+2 SURN Bartra Villacorta
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ3Q
+3 _APID 1,60121::6772490
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGK
+3 _APID 1,60121::7322462
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHP
+3 _APID 1,60121::13112173
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+villacorta&oc=&p=manuel+santiago
+3 _APID 1,62476::7561807060
+1 SEX M
+1 FAMC @F36@
+1 FAMS @F32@
+1 FAMS @F20@
+1 FAMS @F49@
+1 FAMS @F4@
+1 FAMS @F42@
+1 FAMS @F70@
+1 BIRT
+2 DATE 26 July 1877
+2 PLAC San MartÃ­n, San MartÃ­n, San MartÃ­n, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+villacorta&oc=&p=manuel+santiago
+3 _APID 1,62476::7561807060
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816697894:1030:19521236
+2 _APID 102654295942:1030:196505720
+2 _APID 262706431929:1030:206649534
+2 _APID 292511113681:1030:185465837
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ3Q
+2 _APID 1,60121::6772490
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGK
+2 _APID 1,60121::7322462
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHP
+2 _APID 1,60121::13112173
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+villacorta&oc=&p=manuel+santiago
+2 _APID 1,62476::7561807060
+0 @I122816758461@ INDI
+1 NAME Angelica /Alvarado del Aguila/
+2 GIVN Angelica
+2 SURN Alvarado del Aguila
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-CYZ8
+3 _APID 1,60121::7190328
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/antegui?n=alvarado+del+aguila&oc=&p=angelica
+3 _APID 1,62476::7571001726
+1 SEX F
+1 FAMC @F9@
+1 FAMS @F56@
+1 FAMS @F12@
+1 BIRT
+2 DATE 1904
+2 PLAC Moyobamba, San Martin, Peru
+1 DEAT
+2 DATE 23 May 1981
+2 PLAC Magdalena, Del, Mar, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816623905:1030:19521236
+2 _APID 102649194836:1030:196505720
+2 _APID 292511113664:1030:185465837
+2 _APID 422394274100:1030:183674288
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-CYZ8
+2 _APID 1,60121::7190328
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/antegui?n=alvarado+del+aguila&oc=&p=angelica
+2 _APID 1,62476::7571001726
+1 OBJE @O5@
+2 _PRIM Y
+1 OBJE @O3@
+1 OBJE @O4@
+1 OBJE @O2@
+0 @I122816758546@ INDI
+1 NAME Jorge Alejandro /Bartra Alvarado/
+2 GIVN Jorge Alejandro
+2 SURN Bartra Alvarado
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7P
+3 _APID 1,60121::6981167
+1 SEX M
+1 FAMC @F56@
+1 FAMS @F43@
+1 BIRT
+2 DATE 23 Dec 1979
+1 DEAT
+2 DATE 20 Nov 1990
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816624932:1030:19521236
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7P
+2 _APID 1,60121::6981167
+0 @I122816758598@ INDI
+1 NAME Livia Angelica /Bartra Alvarado/
+2 GIVN Livia Angelica
+2 SURN Bartra Alvarado
+1 SEX F
+1 FAMC @F56@
+1 BIRT
+2 DATE 1927
+2 PLAC Tarapoto, San Martin, Peru
+0 @I122816758705@ INDI
+1 NAME Aura Luz /Bartra Alvarado/
+2 GIVN Aura Luz
+2 SURN Bartra Alvarado
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RB4
+3 _APID 1,60121::4567764
+1 SEX F
+1 FAMC @F56@
+1 FAMS @F47@
+1 BIRT
+2 DATE 7 May 1939
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RB4
+2 _APID 1,60121::4567764
+0 @I122816758818@ INDI
+1 NAME Yolanda /Bartra Alvarado/
+2 GIVN Yolanda
+2 SURN Bartra Alvarado
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTLL
+3 _APID 1,60121::11632518
+1 SEX F
+1 FAMC @F56@
+1 FAMS @F22@
+1 BIRT
+2 DATE 19 Oct 1940
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTLL
+2 _APID 1,60121::11632518
+0 @I122816758951@ INDI
+1 NAME Angelica de FÃ¡tima /Bartra ArÃ©valo/
+2 GIVN Angelica de FÃ¡tima
+2 SURN Bartra ArÃ©valo
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7L
+3 _APID 1,60121::6981172
+1 SEX F
+1 FAMC @F43@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7L
+2 _APID 1,60121::6981172
+0 @I122816758952@ INDI
+1 NAME Aurora /ArÃ©valo Valles/
+2 GIVN Aurora
+2 SURN ArÃ©valo Valles
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7T
+3 _APID 1,60121::6981168
+1 SEX F
+1 FAMS @F43@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-3Y7T
+2 _APID 1,60121::6981168
+0 @I122816759037@ INDI
+1 NAME Luz AngÃ©lica /Collazos Bartra/
+2 GIVN Luz AngÃ©lica
+2 SURN Collazos Bartra
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RBH
+3 _APID 1,60121::4567774
+1 SEX F
+1 FAMC @F47@
+1 BIRT
+2 DATE 28 Jul 1973
+2 PLAC Magdalena del Mar, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RBH
+3 _APID 1,60121::4567774
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RBH
+2 _APID 1,60121::4567774
+0 @I122816759038@ INDI
+1 NAME Rosendo /Collazos Pelaez/
+2 GIVN Rosendo
+2 SURN Collazos Pelaez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RBW
+3 _APID 1,60121::4567767
+1 SEX M
+1 FAMS @F47@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2C7R-RBW
+2 _APID 1,60121::4567767
+0 @I122816759456@ INDI
+1 NAME Eduardo Augusto /Bartra Alvarado/
+2 GIVN Eduardo Augusto
+2 SURN Bartra Alvarado
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYD
+3 _APID 1,60121::10345627
+1 SEX M
+1 FAMC @F56@
+1 FAMS @F14@
+1 BIRT
+2 DATE 16 Oct 1934
+2 PLAC Tarapoto - San Martin - PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 22 Apr 2013
+2 PLAC Germantown, Maryland
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816627466:1030:19521236
+2 _APID 102654295964:1030:196505720
+2 _APID 422394274014:1030:183674288
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYD
+2 _APID 1,60121::10345627
+0 @I122816759668@ INDI
+1 NAME Wilfredo /Alvarado Del Ãguila/
+2 GIVN Wilfredo
+2 SURN Alvarado Del Ãguila
+1 SEX M
+1 FAMC @F9@
+1 BIRT
+2 DATE 1898
+2 PLAC Moyobamba, San MartÃ­n, San MartÃ­n, PÃ©rou
+1 DEAT
+2 DATE 1974
+2 PLAC Tarapoto, San MartÃ­n, San MartÃ­n, PÃ©rou
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102649194837:1030:196505720
+0 @I122816759669@ INDI
+1 NAME Antonio /Alvarado Del Aguila/
+2 GIVN Antonio
+2 SURN Alvarado Del Aguila
+1 SEX M
+1 FAMC @F9@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102649194835:1030:196505720
+0 @I122816759670@ INDI
+1 NAME Antonio /Alvarado Silva/
+2 GIVN Antonio
+2 SURN Alvarado Silva
+1 SEX M
+1 FAMS @F9@
+1 FAMS @F11@
+1 FAMS @F75@
+1 BIRT
+2 DATE 27 Oct 1859
+2 PLAC Chachapoyas, Amazonas, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 1918
+2 PLAC Moyobamba, San MartÃ­n, San MartÃ­n, PÃ©rou
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 816703378:1030:19521236
+2 _APID 102649194803:1030:196505720
+2 _APID 422404087154:1030:183674288
+1 OBJE @O1@
+2 _PRIM Y
+0 @I122816759671@ INDI
+1 NAME Teolinda /Del Ãguila Hidalgo/
+2 GIVN Teolinda
+2 SURN Del Ãguila Hidalgo
+1 SEX F
+1 FAMS @F9@
+1 BIRT
+2 DATE 1865
+2 PLAC Rioja, San MartÃ­n, San MartÃ­n, PÃ©rou
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102649185289:1030:196505720
+2 _APID 422404087182:1030:183674288
+0 @I122816759948@ INDI
+1 NAME Claudia Cecilia /ReÃ¡tegui Bartra/
+2 GIVN Claudia Cecilia
+2 SURN ReÃ¡tegui Bartra
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTLK
+3 _APID 1,60121::11632519
+1 SEX F
+1 FAMC @F22@
+1 BIRT
+2 DATE 6 Nov 1975
+2 PLAC JesÃºs MarÃ­a, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTLK
+3 _APID 1,60121::11632519
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTLK
+2 _APID 1,60121::11632519
+0 @I122816759949@ INDI
+1 NAME Oscar /ReÃ¡tegui Macedo/
+2 GIVN Oscar
+2 SURN ReÃ¡tegui Macedo
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTL2
+3 _APID 1,60121::11632517
+1 SEX M
+1 FAMS @F22@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-MTL2
+2 _APID 1,60121::11632517
+0 @I122816760068@ INDI
+1 NAME Eusebio /Bartra DÃ¡vila/
+2 GIVN Eusebio
+2 SURN Bartra DÃ¡vila
+1 SEX M
+1 FAMC @F27@
+1 FAMS @F36@
+1 BIRT
+2 DATE 1838
+0 @I122816760076@ INDI
+1 NAME MarÃ­a Juliana /Villacorta Rengifo/
+2 GIVN MarÃ­a Juliana
+2 SURN Villacorta Rengifo
+1 SEX F
+1 FAMS @F36@
+1 BIRT
+2 DATE 1845
+2 PLAC Lamas, San MartÃ­n,  PerÃº
+0 @I122816760094@ INDI
+1 NAME JoaquÃ­n /Bartra del Castillo Rengifo/
+2 GIVN JoaquÃ­n
+2 SURN Bartra del Castillo Rengifo
+1 SEX M
+1 FAMS @F27@
+1 BIRT
+2 DATE ABT 1813
+0 @I122816760121@ INDI
+1 NAME Francisca /DÃ¡vila/
+2 GIVN Francisca
+2 SURN DÃ¡vila
+1 SEX F
+1 FAMS @F27@
+1 BIRT
+2 DATE ABT 1818
+0 @I122816760422@ INDI
+1 NAME Flor De MarÃ­a /La Hoz Sifuentes/
+2 GIVN Flor De MarÃ­a
+2 SURN La Hoz Sifuentes
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCH
+3 _APID 1,60121::7373333
+1 SEX F
+1 FAMC @F33@
+1 FAMC @F46@
+1 FAMS @F1@
+1 BIRT
+2 DATE 17 Jan 1894
+2 PLAC Iquitos, Loreto, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCH
+3 _APID 1,60121::7373333
+1 DEAT
+2 DATE 7 Jul 1984
+2 PLAC Santiago de Surco, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCH
+3 _APID 1,60121::7373333
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135677337:1030:160558348
+2 _APID 222135677536:1030:160558348
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCH
+2 _APID 1,60121::7373333
+0 @I122816760455@ INDI
+1 NAME Rodolfo /La Hoz Morey/
+2 GIVN Rodolfo
+2 SURN La Hoz Morey
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCD
+3 _APID 1,60121::7373331
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz+morey&oc=&p=rodolfo
+3 _APID 1,62476::4678104025
+1 SEX M
+1 FAMC @F41@
+1 FAMS @F33@
+1 FAMS @F44@
+1 FAMS @F46@
+1 BIRT
+2 DATE 1873
+2 PLAC Tarapoto, PÃ©rou
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz+morey&oc=&p=rodolfo
+3 _APID 1,62476::4678104025
+1 DEAT
+2 DATE 1928
+2 PLAC Iquitos
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102587380887:1030:196505720
+2 _APID 222135672257:1030:160558348
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCD
+2 _APID 1,60121::7373331
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz+morey&oc=&p=rodolfo
+2 _APID 1,62476::4678104025
+0 @I122816760543@ INDI
+1 NAME Amelia /Pinedo Sifuentes/
+2 GIVN Amelia
+2 SURN Pinedo Sifuentes
+1 SEX F
+1 FAMC @F74@
+1 FAMS @F61@
+0 @I122816760701@ INDI
+1 NAME Milena /Vidurrizaga Pinedo/
+2 GIVN Milena
+2 SURN Vidurrizaga Pinedo
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K9X
+3 _APID 1,60121::4573986
+1 SEX F
+1 FAMC @F61@
+1 FAMS @F3@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K9X
+2 _APID 1,60121::4573986
+0 @I122816760761@ INDI
+1 NAME Eduardo /Melo Sifuentes/
+2 GIVN Eduardo
+2 SURN Melo Sifuentes
+1 SEX M
+1 FAMC @F74@
+0 @I122816760856@ INDI
+1 NAME Eduardo La Hoz /Urquiaga/
+2 GIVN Eduardo La Hoz
+2 SURN Urquiaga
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz&oc=&p=eduardo
+3 _APID 1,62476::4678104030
+1 SEX M
+1 FAMS @F41@
+1 BIRT
+2 DATE 1845
+2 PLAC Tarapoto, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz&oc=&p=eduardo
+3 _APID 1,62476::4678104030
+1 DEAT
+2 DATE 29 Sep 1892
+2 PLAC Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135671352:1030:160558348
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/joseluisbo?n=la+hoz&oc=&p=eduardo
+2 _APID 1,62476::4678104030
+0 @I122816760857@ INDI
+1 NAME MarÃ­a Manuela "Manonga" /Morey Arias/
+2 GIVN MarÃ­a Manuela "Manonga"
+2 SURN Morey Arias
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=morey+arias&oc=&p=maria+manuela
+3 _APID 1,62476::4678111936
+1 SEX F
+1 FAMS @F41@
+1 FAMS @F68@
+1 BIRT
+2 DATE 23 DEC 1844
+2 PLAC Tarapoto, San Martin, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=morey+arias&oc=&p=maria+manuela
+3 _APID 1,62476::4678111936
+1 DEAT
+2 DATE 25 July 1932
+2 PLAC Tarapoto, San Martin, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/joseluisbo?n=morey+arias&oc=&p=maria+manuela
+3 _APID 1,62476::4678111936
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102587380758:1030:196505720
+2 _APID 222131974831:1030:160558348
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/joseluisbo?n=morey+arias&oc=&p=maria+manuela
+2 _APID 1,62476::4678111936
+0 @I122816761094@ INDI
+1 NAME Rodolfo De La Hoz /Morey/
+2 GIVN Rodolfo De La Hoz
+2 SURN Morey
+1 SEX M
+1 FAMC @F41@
+1 BIRT
+2 DATE Jul 1871
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 1892
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135672208:1030:160558348
+0 @I122816761095@ INDI
+1 NAME Heriberto /ReÃ¡tegui Babilonia/
+2 GIVN Heriberto
+2 SURN ReÃ¡tegui Babilonia
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 01 Aug 1864
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 08 May 1943
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222134792812:1030:160558348
+0 @I122816761096@ INDI
+1 NAME CÃ©sar Augusto /ReÃ¡tegui Morey/
+2 GIVN CÃ©sar Augusto
+2 SURN ReÃ¡tegui Morey
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 11 Jul 1888
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 8 Nov 1932
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222134494179:1030:160558348
+0 @I122816761097@ INDI
+1 NAME LuÃ­s Felipe /ReÃ¡tegui Morey/
+2 GIVN LuÃ­s Felipe
+2 SURN ReÃ¡tegui Morey
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 01 Aug 1878
+2 PLAC Tarapoto Stsma Cruz Del Triunfo
+1 DEAT
+2 DATE 04 Mar 1928
+2 PLAC Iquitos, Loreto, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222134796379:1030:160558348
+0 @I122816761098@ INDI
+1 NAME Apolinaria Flor De MarÃ­a /RÃ©ategui Morey/
+2 GIVN Apolinaria Flor De MarÃ­a
+2 SURN RÃ©ategui Morey
+1 SEX F
+1 FAMC @F68@
+1 BIRT
+2 DATE 01 Feb 1874
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 07 DEC 1969
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135672669:1030:160558348
+0 @I122816761099@ INDI
+1 NAME JoaquÃ­n Adolfo /ReÃ¡tegui Morey/ II
+2 GIVN JoaquÃ­n Adolfo
+2 SURN ReÃ¡tegui Morey
+2 NSFX II
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 13 Mar 1884
+2 PLAC Tarapoto, San MartÃ­n
+1 DEAT
+2 DATE 1929
+2 PLAC Lima, Lima, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102647271305:1030:196505720
+2 _APID 222134348300:1030:160558348
+0 @I122816761100@ INDI
+1 NAME JosÃ© Ignacio /RÃ©ategui Morey/
+2 GIVN JosÃ© Ignacio
+2 SURN RÃ©ategui Morey
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 15 Oct 1876
+2 PLAC Tarapoto, Santa Cruz Del Triunfo
+1 DEAT
+2 DATE 13 Nov 1953
+2 PLAC BreÃ±a, Ancash, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135673359:1030:160558348
+0 @I122816761101@ INDI
+1 NAME Alejandro /RÃ©ategui Morey/
+2 GIVN Alejandro
+2 SURN RÃ©ategui Morey
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 1881
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 1947
+2 PLAC Lima, Lima, Lima, PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102587381146:1030:196505720
+2 _APID 222134494942:1030:160558348
+0 @I122816761102@ INDI
+1 NAME JosÃ© Ulises /ReÃ¡tegui Morey/
+2 GIVN JosÃ© Ulises
+2 SURN ReÃ¡tegui Morey
+1 SEX M
+1 FAMC @F68@
+1 BIRT
+2 DATE 03 May 1886
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 04 Dec 1967
+2 PLAC Tingo Maria, Huanuco, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102587382121:1030:196505720
+2 _APID 222125426100:1030:160558348
+0 @I122816761104@ INDI
+1 NAME MarÃ­a Herlinda /ReÃ¡tegui Morey/
+2 GIVN MarÃ­a Herlinda
+2 SURN ReÃ¡tegui Morey
+1 SEX F
+1 FAMC @F68@
+1 BIRT
+2 DATE 21 Aug 1890
+2 PLAC Tarapoto
+1 DEAT
+2 DATE 21 May 1984
+2 PLAC La Molina, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135675102:1030:160558348
+0 @I122816761105@ INDI
+1 NAME MarÃ­a InÃ©s /RÃ©ategui Morey/
+2 GIVN MarÃ­a InÃ©s
+2 SURN RÃ©ategui Morey
+1 SEX F
+1 FAMC @F68@
+1 BIRT
+2 DATE 25 Apr 1880
+2 PLAC Tarapoto, Santa, Cruz, Del, Triunfo, Loreto, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 PLAC Lima, Lima, PÃ©rou
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102587382004:1030:196505720
+2 _APID 222135674013:1030:160558348
+0 @I122816761106@ INDI
+1 NAME RosalÃ­a /Sifuentes/
+2 GIVN RosalÃ­a
+2 SURN Sifuentes
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SEX F
+1 FAMS @F44@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135672288:1030:160558348
+2 _APID 222135672327:1030:160558348
+0 @I122816761107@ INDI
+1 NAME Rosa /De La Hoz Estrella/
+2 GIVN Rosa
+2 SURN De La Hoz Estrella
+1 SEX F
+1 FAMC @F44@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135677431:1030:160558348
+0 @I122816761109@ INDI
+1 NAME Manuela /De La Hoz Estrella/
+2 GIVN Manuela
+2 SURN De La Hoz Estrella
+1 SEX F
+1 FAMC @F44@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135677283:1030:160558348
+0 @I122816761110@ INDI
+1 NAME Hortensia /De La Hoz Estrella/
+2 GIVN Hortensia
+2 SURN De La Hoz Estrella
+1 SEX F
+1 FAMC @F44@
+1 BIRT
+2 PLAC Tarapoto, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135677218:1030:160558348
+0 @I122816761315@ INDI
+1 NAME EstefanÃ­a /Sifuentes/
+2 GIVN EstefanÃ­a
+2 SURN Sifuentes
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCV
+3 _APID 1,60121::7373332
+1 SEX F
+1 FAMS @F46@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-XDCV
+2 _APID 1,60121::7373332
+0 @I122816761383@ INDI
+1 NAME Gustavo /Bartra Valdivieso/
+2 GIVN Gustavo
+2 SURN Bartra Valdivieso
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ33
+3 _APID 1,60121::6772493
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RM3R
+3 _APID 1,60121::12230521
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=gustavo
+3 _APID 1,62476::7561807055
+1 FAMC @F20@
+1 FAMC @F32@
+1 FAMS @F21@
+1 BIRT
+2 DATE 1915
+2 PLAC Lima, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ33
+3 _APID 1,60121::6772493
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=gustavo
+3 _APID 1,62476::7561807055
+1 DEAT
+2 DATE 17 Oct 1984
+2 PLAC Miraflores, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ33
+3 _APID 1,60121::6772493
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=gustavo
+3 _APID 1,62476::7561807055
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066134765:1030:19521236
+2 _APID 262706431116:1030:206649534
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ33
+2 _APID 1,60121::6772493
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RM3R
+2 _APID 1,60121::12230521
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=gustavo
+2 _APID 1,62476::7561807055
+0 @I122816761384@ INDI
+1 NAME Zoila /Valdivieso SÃ¡nchez/
+2 GIVN Zoila
+2 SURN Valdivieso SÃ¡nchez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ37
+3 _APID 1,60121::6772491
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=zoila
+3 _APID 1,62476::7561809771
+1 SEX F
+1 FAMS @F20@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-YZ37
+2 _APID 1,60121::6772491
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=zoila
+2 _APID 1,62476::7561809771
+0 @I122816761586@ INDI
+1 NAME Leonardo Agusto /Bartra Gonzales/
+2 GIVN Leonardo Agusto
+2 SURN Bartra Gonzales
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPXX
+3 _APID 1,60121::13020200
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+gonzales&oc=&p=leonardo+a.
+3 _APID 1,62476::7561807051
+1 SEX M
+1 FAMC @F70@
+1 FAMC @F71@
+1 FAMS @F51@
+1 BIRT
+2 DATE 11 Mar 1912
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPXX
+3 _APID 1,60121::13020200
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+gonzales&oc=&p=leonardo+a.
+3 _APID 1,62476::7561807051
+1 DEAT
+2 DATE 28 Octubre 1995
+2 PLAC Lima, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPXX
+3 _APID 1,60121::13020200
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066134874:1030:19521236
+2 _APID 350024890239:1030:51665439
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPXX
+2 _APID 1,60121::13020200
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+gonzales&oc=&p=leonardo+a.
+2 _APID 1,62476::7561807051
+0 @I122816761587@ INDI
+1 NAME Emma Maria /Bartra Valdivieso/
+2 GIVN Emma Maria
+2 SURN Bartra Valdivieso
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=emma+maria
+3 _APID 1,62476::7561807054
+1 SEX F
+1 FAMC @F70@
+1 BIRT
+2 DATE 1903
+2 PLAC Tarapoto, San MartÃ­n, San MartÃ­n, San MartÃ­n, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=emma+maria
+3 _APID 1,62476::7561807054
+1 DEAT
+2 DATE 1987
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=emma+maria
+3 _APID 1,62476::7561807054
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=emma+maria
+2 _APID 1,62476::7561807054
+0 @I122816761588@ INDI
+1 NAME Oswaldo /Bartra Valdivieso/
+2 GIVN Oswaldo
+2 SURN Bartra Valdivieso
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHV
+3 _APID 1,60121::13112175
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=oswaldo
+3 _APID 1,62476::7561807057
+1 SEX M
+1 FAMC @F32@
+1 FAMC @F42@
+1 BIRT
+2 DATE 1918
+2 PLAC Peru, PÃ©rou
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHV
+3 _APID 1,60121::13112175
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=oswaldo
+3 _APID 1,62476::7561807057
+1 DEAT
+2 DATE 18 Jun 1985
+2 PLAC San Borja, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHV
+3 _APID 1,60121::13112175
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=oswaldo
+3 _APID 1,62476::7561807057
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066134818:1030:19521236
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHV
+2 _APID 1,60121::13112175
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=oswaldo
+2 _APID 1,62476::7561807057
+0 @I122816761589@ INDI
+1 NAME Santiago /Bartra Valdivieso/
+2 GIVN Santiago
+2 SURN Bartra Valdivieso
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DG8
+3 _APID 1,60121::7322466
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=santiago
+3 _APID 1,62476::7561807058
+1 SEX M
+1 FAMC @F4@
+1 FAMS @F6@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DG8
+2 _APID 1,60121::7322466
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=bartra+valdivieso&oc=&p=santiago
+2 _APID 1,62476::7561807058
+0 @I122816761590@ INDI
+1 NAME Elvira /Gonzales/
+2 GIVN Elvira
+2 SURN Gonzales
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=gonzales&oc=&p=elvira
+3 _APID 1,62476::7561808281
+1 SEX F
+1 FAMS @F49@
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=gonzales&oc=&p=elvira
+2 _APID 1,62476::7561808281
+0 @I122816761845@ INDI
+1 NAME Nelson Alvarado /Laos/
+2 GIVN Nelson Alvarado
+2 SURN Laos
+1 SEX M
+1 BIRT
+2 DATE 16 Nov 1924
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 29 Aug 1980
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135685433:1030:160558348
+0 @I122816762106@ INDI
+1 NAME Antonio /Alvarado Silva/
+2 GIVN Antonio
+2 SURN Alvarado Silva
+1 SEX M
+1 BIRT
+2 PLAC Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321839113:1030:178104297
+0 @I122816762107@ INDI
+1 NAME Flor de MarÃ­a /Laos/
+2 GIVN Flor de MarÃ­a
+2 SURN Laos
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321530618:1030:178104297
+0 @I122816762108@ INDI
+1 NAME Celinda /Velasquez/
+2 GIVN Celinda
+2 SURN Velasquez
+1 FAMS @F69@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321529041:1030:178104297
+0 @I122816762109@ INDI
+1 NAME Milton Aecio /Alvarado Velasquez/
+2 GIVN Milton Aecio
+2 SURN Alvarado Velasquez
+1 SEX M
+1 FAMC @F69@
+1 BIRT
+2 DATE 1925
+2 PLAC Moyobamba, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321528880:1030:178104297
+0 @I122816762201@ INDI
+1 NAME Teolinda /Del Aguila/
+2 GIVN Teolinda
+2 SURN Del Aguila
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M2
+3 _APID 1,60121::6177344
+1 SEX F
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M2
+2 _APID 1,60121::6177344
+0 @I122816762317@ INDI
+1 NAME Antonio Alvarado /Del Aguilla/
+2 GIVN Antonio Alvarado
+2 SURN Del Aguilla
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M8
+3 _APID 1,60121::6177347
+1 SEX M
+1 FAMC @F13@
+1 FAMS @F1@
+1 FAMS @F38@
+1 FAMS @F25@
+1 BIRT
+2 DATE 28 NOV 1901
+2 PLAC Moyobamba, San MartÃ­n, PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M8
+3 _APID 1,60121::6177347
+1 DEAT
+2 DATE 25 MAY 1949
+2 PLAC Lima, PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M8
+3 _APID 1,60121::6177347
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135677854:1030:160558348
+2 _APID 292816735321:1030:211926575
+2 _APID 332321529039:1030:178104297
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M8
+2 _APID 1,60121::6177347
+0 @I122816762318@ INDI
+1 NAME Nelson Jose /Alvarado La Hoz/
+2 GIVN Nelson Jose
+2 SURN Alvarado La Hoz
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHH8
+3 _APID 1,60121::8861812
+1 SEX M
+1 FAMC @F1@
+1 FAMS @F52@
+1 BIRT
+2 DATE 16 Nov 1924
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 29 AUG 1980
+2 PLAC Lima, PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 222135685433:1030:160558348
+2 _APID 292816735320:1030:211926575
+2 _APID 332339698927:1030:178104297
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHH8
+2 _APID 1,60121::8861812
+0 @I122816762398@ INDI
+1 NAME Antonio /Alvarado Silva/
+2 GIVN Antonio
+2 SURN Alvarado Silva
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1MJ
+3 _APID 1,60121::6177343
+1 SEX M
+1 FAMS @F13@
+1 BIRT
+2 PLAC Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321839113:1030:178104297
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1MJ
+2 _APID 1,60121::6177343
+0 @I122816762399@ INDI
+1 NAME Flor de MarÃ­a /Laos/
+2 GIVN Flor de MarÃ­a
+2 SURN Laos
+1 FAMS @F38@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321530618:1030:178104297
+0 @I122816762400@ INDI
+1 NAME Celinda /Velasquez/
+2 GIVN Celinda
+2 SURN Velasquez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RC8
+3 _APID 1,60121::14649958
+1 FAMS @F25@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321529041:1030:178104297
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RC8
+2 _APID 1,60121::14649958
+0 @I122816762401@ INDI
+1 NAME Milton Aecio /Alvarado Velasquez/
+2 GIVN Milton Aecio
+2 SURN Alvarado Velasquez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RC3
+3 _APID 1,60121::14649961
+1 SEX M
+1 FAMC @F25@
+1 FAMS @F24@
+1 BIRT
+2 DATE 1925
+2 PLAC Moyobamba, San Martin, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 332321528880:1030:178104297
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RC3
+2 _APID 1,60121::14649961
+0 @I122816762443@ INDI
+1 NAME Teolinda /Del Aguila/
+2 GIVN Teolinda
+2 SURN Del Aguila
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M2
+3 _APID 1,60121::6177344
+1 SEX F
+1 FAMS @F13@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMR-W1M2
+2 _APID 1,60121::6177344
+0 @I122816762491@ INDI
+1 NAME Proferina /Valdivieso la Torre/
+2 GIVN Proferina
+2 SURN Valdivieso la Torre
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGB
+3 _APID 1,60121::7322467
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+latorre&oc=&p=prosperina
+3 _APID 1,62476::7561809769
+1 SEX F
+1 FAMC @F54@
+1 FAMS @F6@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGB
+2 _APID 1,60121::7322467
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+latorre&oc=&p=prosperina
+2 _APID 1,62476::7561809769
+0 @I122816762492@ INDI
+1 NAME Zoila /Valdivieso/
+2 GIVN Zoila
+2 SURN Valdivieso
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGT
+3 _APID 1,60121::7322463
+1 SEX F
+1 FAMS @F4@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGT
+2 _APID 1,60121::7322463
+0 @I122816762561@ INDI
+1 NAME Carlos /Valdivieso Sanchez/
+2 GIVN Carlos
+2 SURN Valdivieso Sanchez
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 SEX M
+1 FAMS @F54@
+1 BIRT
+2 PLAC Arequipa, Arequipa, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 DEAT
+2 DATE 26 May 1967
+2 PLAC JesÃºs MarÃ­a, Lima, Lima, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+2 _APID 1,62476::7561809770
+0 @I122816762562@ INDI
+1 NAME Dolores /Latorre Robalino/
+2 GIVN Dolores
+2 SURN Latorre Robalino
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 SEX F
+1 FAMS @F54@
+1 BIRT
+2 DATE 1880
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 DEAT
+2 DATE 10 August 1966
+2 PLAC Surquillo, Lima, Lima, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+2 _APID 1,62476::7561808398
+0 @I122816762725@ INDI
+1 NAME Elvira /Gonzales/
+2 GIVN Elvira
+2 SURN Gonzales
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPX1
+3 _APID 1,60121::13020199
+1 SEX F
+1 FAMS @F71@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-LPX1
+2 _APID 1,60121::13020199
+0 @I122816762799@ INDI
+1 NAME Zoila Ines /Valdivieso La Torre/
+2 GIVN Zoila Ines
+2 SURN Valdivieso La Torre
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MML
+3 _APID 1,60121::13112152
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+la+torre&oc=1&p=zoila+ines
+3 _APID 1,62476::7561809767
+1 SEX F
+1 FAMC @F45@
+1 FAMS @F51@
+1 BIRT
+2 DATE 1910
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MML
+3 _APID 1,60121::13112152
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+la+torre&oc=1&p=zoila+ines
+3 _APID 1,62476::7561809767
+1 DEAT
+2 DATE 15 Jun 1985
+2 PLAC San Borja, Lima, Lima, PerÃº
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MML
+3 _APID 1,60121::13112152
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+la+torre&oc=1&p=zoila+ines
+3 _APID 1,62476::7561809767
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136547:1030:66460054
+2 _APID 350024890281:1030:51665439
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MML
+2 _APID 1,60121::13112152
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+la+torre&oc=1&p=zoila+ines
+2 _APID 1,62476::7561809767
+0 @I122816762800@ INDI
+1 NAME Raul Alberto /Vidurrizaga Valdivieso/
+2 GIVN Raul Alberto
+2 SURN Vidurrizaga Valdivieso
+1 SEX M
+1 FAMC @F51@
+1 BIRT
+2 DATE 2 Dec 1928
+1 DEAT
+2 DATE 8 Dec 1985
+2 PLAC Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 26217290307:1030:51665439
+0 @I122816762855@ INDI
+1 NAME Carlos /Valdivieso Sanchez/
+2 GIVN Carlos
+2 SURN Valdivieso Sanchez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MMT
+3 _APID 1,60121::13112150
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 SEX M
+1 FAMS @F45@
+1 BIRT
+2 PLAC Arequipa, Arequipa, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 DEAT
+2 DATE 26 May 1967
+2 PLAC JesÃºs MarÃ­a, Lima, Lima, PÃ©rou
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+3 _APID 1,62476::7561809770
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MMT
+2 _APID 1,60121::13112150
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=valdivieso+sanchez&oc=&p=carlos
+2 _APID 1,62476::7561809770
+0 @I122816762856@ INDI
+1 NAME Dolores /Latorre Robalino/
+2 GIVN Dolores
+2 SURN Latorre Robalino
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MM1
+3 _APID 1,60121::13112151
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 SEX F
+1 FAMS @F45@
+1 FAMS @F62@
+1 BIRT
+2 DATE 1880
+2 PLAC Moyobamba, San Martin, Peru
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 DEAT
+2 DATE 10 August 1966
+2 PLAC Surquillo, Lima, Lima, PÃ©rou
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+3 _APID 1,62476::7561808398
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260186794810:1030:66460054
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6MM1
+2 _APID 1,60121::13112151
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=latorre+robalino&oc=&p=dolores
+2 _APID 1,62476::7561808398
+0 @I122816762994@ INDI
+1 NAME Jose /Valdivieso Perez/
+2 GIVN Jose
+2 SURN Valdivieso Perez
+1 SEX M
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136975:1030:66460054
+0 @I122816762995@ INDI
+1 NAME Zoila /Valdivieso Perez/
+2 GIVN Zoila
+2 SURN Valdivieso Perez
+1 SEX F
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136941:1030:66460054
+0 @I122816762996@ INDI
+1 NAME Socorro /Valdivieso Perez/
+2 GIVN Socorro
+2 SURN Valdivieso Perez
+1 SEX F
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136900:1030:66460054
+0 @I122816762997@ INDI
+1 NAME Eloisa /Valdivieso Perez/
+2 GIVN Eloisa
+2 SURN Valdivieso Perez
+1 SEX F
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136868:1030:66460054
+0 @I122816762998@ INDI
+1 NAME Rosa /Valdivieso Latorre/
+2 GIVN Rosa
+2 SURN Valdivieso Latorre
+1 SEX F
+1 FAMC @F62@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136629:1030:66460054
+0 @I122816762999@ INDI
+1 NAME Prosperina /Valdivieso Latorre/
+2 GIVN Prosperina
+2 SURN Valdivieso Latorre
+1 SEX F
+1 FAMC @F62@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136591:1030:66460054
+0 @I122816763000@ INDI
+1 NAME Carlos /Valdivieso Latorre/
+2 GIVN Carlos
+2 SURN Valdivieso Latorre
+1 SEX M
+1 FAMC @F62@
+1 BIRT
+2 DATE 26 August 1907
+2 PLAC Yurimaguas, Alto Amazonas, Loreto, PÃ©rou
+1 DEAT
+2 DATE 6 October 1972
+2 PLAC Lima, Lima, Lima, PÃ©rou
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260200136514:1030:66460054
+0 @I122816763001@ INDI
+1 NAME Ramon /Valdivieso La torre/
+2 GIVN Ramon
+2 SURN Valdivieso La torre
+1 SEX M
+1 FAMC @F62@
+1 BIRT
+2 DATE 7 Dec 1914
+2 PLAC Yurimaguas, Loreto, Peru
+1 DEAT
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 260186740296:1030:66460054
+0 @I122816763099@ INDI
+1 NAME Amelia /Razetto Reategui/
+2 GIVN Amelia
+2 SURN Razetto Reategui
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RMQ9
+3 _APID 1,60121::12230522
+2 SOUR @S233249142@
+3 DATA
+4 WWW https://gw.geneanet.org/albertouladislao?n=razetto+reategui&oc=&p=amelia
+3 _APID 1,62476::7561809192
+1 SEX F
+1 FAMS @F21@
+1 BIRT
+2 PLAC Lima, Lima, Peru
+1 DEAT
+2 PLAC Lima, Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 262706430947:1030:206649534
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RMQ9
+2 _APID 1,60121::12230522
+1 SOUR @S233249142@
+2 DATA
+3 WWW https://gw.geneanet.org/albertouladislao?n=razetto+reategui&oc=&p=amelia
+2 _APID 1,62476::7561809192
+0 @I122816763218@ INDI
+1 NAME Gustav R /Bartra/
+2 GIVN Gustav R
+2 SURN Bartra
+1 SEX M
+1 FAMC @F21@
+1 BIRT
+2 DATE Oct 1943
+2 PLAC Tarapoto, San Martin, Peru
+1 DEAT
+2 DATE 1 Oct 2023
+2 PLAC Riverhead, Suffolk, New York, USA
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 262706430589:1030:206649534
+0 @I122816763281@ INDI
+1 NAME Guillermo /Bartra Razzeto/
+2 GIVN Guillermo
+2 SURN Bartra Razzeto
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RM3P
+3 _APID 1,60121::12230525
+1 SEX M
+1 FAMC @F21@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLM1-RM3P
+2 _APID 1,60121::12230525
+0 @I122816763412@ INDI
+1 NAME Zoila /Valdiviezo Sanchez/
+2 GIVN Zoila
+2 SURN Valdiviezo Sanchez
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHT
+3 _APID 1,60121::13112174
+1 SEX F
+1 FAMS @F42@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXW-6NHT
+2 _APID 1,60121::13112174
+0 @I122816763761@ INDI
+1 NAME Enma? /Bartra/
+2 GIVN Enma?
+2 SURN Bartra
+1 SEX F
+1 FAMC @F63@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066136016:1030:19521236
+0 @I122816763763@ INDI
+1 NAME Nelson /Bartra Alvarado/
+2 GIVN Nelson
+2 SURN Bartra Alvarado
+1 SEX M
+1 FAMC @F56@
+1 DEAT
+2 PLAC falleciÃ³  de un aÃ±o y 2 meses.  el dÃ©cimo de los hijos.
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066135883:1030:19521236
+0 @I122816763766@ INDI
+1 NAME Artemisa /Bartra Melendez/
+2 GIVN Artemisa
+2 SURN Bartra Melendez
+1 SEX F
+1 FAMC @F63@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066135699:1030:19521236
+0 @I122816763768@ INDI
+1 NAME Enith /Bartra Vasquez/
+2 GIVN Enith
+2 SURN Bartra Vasquez
+1 SEX F
+1 FAMC @F63@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066135460:1030:19521236
+0 @I122816763998@ INDI
+1 NAME Leonidas /VildÃ³sola Vidurrizaga/
+2 GIVN Leonidas
+2 SURN VildÃ³sola Vidurrizaga
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K9F
+3 _APID 1,60121::4573988
+1 SEX F
+1 FAMC @F3@
+1 BIRT
+2 DATE 1 Abr 1969
+2 PLAC Lima, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K9F
+3 _APID 1,60121::4573988
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K9F
+2 _APID 1,60121::4573988
+0 @I122816763999@ INDI
+1 NAME Hugo /VildÃ³sola GonzÃ¡les/
+2 GIVN Hugo
+2 SURN VildÃ³sola GonzÃ¡les
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K96
+3 _APID 1,60121::4573984
+1 SEX M
+1 FAMS @F3@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:2CQ8-K96
+2 _APID 1,60121::4573984
+0 @I122816764308@ INDI
+1 NAME Cantidio Trajano /Gomes/
+2 GIVN Cantidio Trajano
+2 SURN Gomes
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4BV
+3 _APID 1,9799::2764523
+1 SEX M
+1 FAMS @F60@
+1 SOUR @S233249656@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4BV
+2 _APID 1,9799::2764523
+0 @I122816764309@ INDI
+1 NAME Euphrasia /Da Fonseca Gomes/
+2 GIVN Euphrasia
+2 SURN Da Fonseca Gomes
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4BY
+3 _APID 1,9799::2764525
+1 SEX F
+1 FAMS @F60@
+1 SOUR @S233249656@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4BY
+2 _APID 1,9799::2764525
+0 @I122816887000@ INDI
+1 NAME Soledad /Del Ãguila Zumaeta/
+2 GIVN Soledad
+2 SURN Del Ãguila Zumaeta
+1 SEX F
+1 FAMS @F11@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102307714470:1030:19521236
+0 @I122816887001@ INDI
+1 NAME Robertina /Alvarado Del Ãguila/
+2 GIVN Robertina
+2 SURN Alvarado Del Ãguila
+1 SEX F
+1 FAMC @F11@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102307715020:1030:19521236
+0 @I122816887002@ INDI
+1 NAME Robertina /Alvarado Del Aguila/
+2 GIVN Robertina
+2 SURN Alvarado Del Aguila
+1 SEX F
+1 FAMC @F75@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 102269780977:1030:19521236
+0 @I122816887003@ INDI
+1 NAME Humberto /Alvarado Garate/
+2 GIVN Humberto
+2 SURN Alvarado Garate
+1 SEX M
+1 FAMC @F11@
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 100066133033:1030:19521236
+0 @I122816888763@ INDI
+1 NAME Graciela Elisa Jacinta /Jourde Blacker/
+2 GIVN Graciela Elisa Jacinta
+2 SURN Jourde Blacker
+2 SOUR @S233192318@
+3 PAGE Ancestry Family Tree
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHCM
+3 _APID 1,60121::8861811
+1 SEX F
+1 FAMC @F59@
+1 FAMS @F52@
+1 BIRT
+2 DATE 17 AUG 1933
+2 PLAC Lima, PerÃº
+1 DEAT
+2 PLAC Lima, PerÃº
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 292816698707:1030:211926575
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHCM
+2 _APID 1,60121::8861811
+0 @I122816889034@ INDI
+1 NAME Noemi /Alvarado La Hoz/
+2 GIVN Noemi
+2 SURN Alvarado La Hoz
+1 SEX F
+1 FAMC @F1@
+0 @I122816889115@ INDI
+1 NAME Sheilita /Alvarado La Hoz/
+2 GIVN Sheilita
+2 SURN Alvarado La Hoz
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CGLJ
+3 _APID 1,60121::9790403
+1 SEX F
+1 FAMC @F1@
+1 FAMS @F39@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CGLJ
+2 _APID 1,60121::9790403
+0 @I122816889311@ INDI
+1 NAME Rodolfo /Alvarado La Hoz/
+2 GIVN Rodolfo
+2 SURN Alvarado La Hoz
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KKW2
+3 _APID 1,60121::15114506
+1 SEX M
+1 FAMC @F1@
+1 FAMS @F5@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KKW2
+2 _APID 1,60121::15114506
+0 @I122816889540@ INDI
+1 NAME Hector Luis /Morey Arevalo/
+2 GIVN Hector Luis
+2 SURN Morey Arevalo
+2 SOUR @S233265548@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5T
+3 _APID 1,9800::171927
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CG2N
+3 _APID 1,60121::9790402
+1 SEX M
+1 FAMC @F72@
+1 FAMS @F39@
+1 BIRT
+2 DATE 1932
+2 SOUR @S233265548@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5T
+3 _APID 1,9800::171927
+1 EVEN
+2 TYPE Arrival
+2 DATE 1940
+2 PLAC Rio De Janeiro, Rio De Janeiro, Brazil
+2 SOUR @S233265548@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5T
+3 _APID 1,9800::171927
+1 SOUR @S233265548@
+2 DATA
+3 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5T
+2 _APID 1,9800::171927
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CG2N
+2 _APID 1,60121::9790402
+0 @I122816889761@ INDI
+1 NAME Regina Judith /Guerrero Segura/
+2 GIVN Regina Judith
+2 SURN Guerrero Segura
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RCF
+3 _APID 1,60121::14649962
+1 SEX F
+1 FAMS @F24@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RCF
+2 _APID 1,60121::14649962
+0 @I122816889978@ INDI
+1 NAME Rosa Gladys /Fiek Salas/
+2 GIVN Rosa Gladys
+2 SURN Fiek Salas
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KK2M
+3 _APID 1,60121::15114507
+1 FAMS @F5@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KK2M
+2 _APID 1,60121::15114507
+0 @I122816890069@ INDI
+1 NAME Ignacio /Morey PeÃ±a/
+2 GIVN Ignacio
+2 SURN Morey PeÃ±a
+2 SOUR @S233265548@
+3 DATA
+4 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5Y
+3 _APID 1,9800::171930
+1 SEX M
+1 FAMS @F72@
+1 SOUR @S233265548@
+2 DATA
+3 WWW https://familysearch.org/ark:/61903/1:1:KC6H-J5Y
+2 _APID 1,9800::171930
+0 @I122816890261@ INDI
+1 NAME Gladys Elsa Valeria /Jourde Blacker/
+2 GIVN Gladys Elsa Valeria
+2 SURN Jourde Blacker
+1 SEX F
+1 FAMC @F59@
+1 BIRT
+2 DATE 15 SEP 1924
+2 PLAC Lima, PerÃº
+1 DEAT
+2 PLAC Lima, PerÃº
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 292816699594:1030:211926575
+0 @I122816890262@ INDI
+1 NAME Julio Eduardo /Jourde Blacker/
+2 GIVN Julio Eduardo
+2 SURN Jourde Blacker
+1 SEX M
+1 FAMC @F59@
+1 BIRT
+2 DATE 31 MAR 1926
+2 PLAC Lima, PerÃº
+1 DEAT
+2 DATE 25 MAR 1979
+2 PLAC Lima, PerÃº
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 292816698706:1030:211926575
+0 @I122816890263@ INDI
+1 NAME Julio Francisco Emilio Roman /Jourde Vera/
+2 GIVN Julio Francisco Emilio Roman
+2 SURN Jourde Vera
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-SXCB
+3 _APID 1,60121::9637965
+1 SEX M
+1 FAMC @F58@
+1 FAMS @F59@
+1 BIRT
+2 DATE 1899
+2 PLAC Macate, Ancash, PerÃº
+1 DEAT
+2 DATE 20 JUL 1955
+2 PLAC Barranco, Lima, PerÃº
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 292816685674:1030:211926575
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-SXCB
+2 _APID 1,60121::9637965
+0 @I122816890264@ INDI
+1 NAME Elisa Maria Francisca /Blacker LeÃ³n/
+2 GIVN Elisa Maria Francisca
+2 SURN Blacker LeÃ³n
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLM4
+3 _APID 1,60121::9637964
+1 SEX F
+1 FAMS @F59@
+1 BIRT
+2 DATE 3 DEC 1897
+2 PLAC Lima, PerÃº
+1 DEAT
+2 DATE 20 DEC 1947
+2 PLAC Barranco, Lima, PerÃº
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 292816673851:1030:211926575
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLM4
+2 _APID 1,60121::9637964
+0 @I122816890446@ INDI
+1 NAME Rosa AngÃ©lica /Bartra Monteverde/
+2 GIVN Rosa AngÃ©lica
+2 SURN Bartra Monteverde
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+3 _APID 1,60121::10345629
+1 SEX F
+1 FAMC @F14@
+1 BIRT
+2 DATE 30 Abr 1957
+2 PLAC Pueblo Libre, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+3 _APID 1,60121::10345629
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+2 _APID 1,60121::10345629
+0 @I122816890447@ INDI
+1 NAME Carmen Victoria /Monteverde Morzn/
+2 GIVN Carmen Victoria
+2 SURN Monteverde Morzn
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYJ
+3 _APID 1,60121::10345628
+1 SEX F
+1 FAMS @F14@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYJ
+2 _APID 1,60121::10345628
+0 @I122816890677@ INDI
+1 NAME Rosa AngÃ©lica /Bartra Monteverde/
+2 GIVN Rosa AngÃ©lica
+2 SURN Bartra Monteverde
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+3 _APID 1,60121::10345629
+1 SEX F
+1 FAMC @F67@
+1 BIRT
+2 DATE 30 Abr 1957
+2 PLAC Pueblo Libre, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+3 _APID 1,60121::10345629
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDY4
+2 _APID 1,60121::10345629
+0 @I122816890678@ INDI
+1 NAME Carmen Victoria /Monteverde Morzn/
+2 GIVN Carmen Victoria
+2 SURN Monteverde Morzn
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYJ
+3 _APID 1,60121::10345628
+1 SEX F
+1 FAMS @F67@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX3-ZDYJ
+2 _APID 1,60121::10345628
+0 @I122816890738@ INDI
+1 NAME Alejandro /Bartra Sifuentes/
+2 GIVN Alejandro
+2 SURN Bartra Sifuentes
+1 SEX M
+1 FAMS @F12@
+1 BIRT
+2 DATE 1900
+1 DEAT
+2 DATE 1958
+2 PLAC Lima, Peru
+1 SOUR @S233192318@
+2 PAGE Ancestry Family Tree
+2 _APID 422394274120:1030:183674288
+0 @I122816891012@ INDI
+1 NAME Julio Francisco /Jourde/
+2 GIVN Julio Francisco
+2 SURN Jourde
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLMS
+3 _APID 1,60121::9637962
+1 SEX M
+1 FAMS @F58@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLMS
+2 _APID 1,60121::9637962
+0 @I122816891013@ INDI
+1 NAME Zoraida /Vera/
+2 GIVN Zoraida
+2 SURN Vera
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLM7
+3 _APID 1,60121::9637963
+1 SEX F
+1 FAMS @F58@
+1 SOUR @S233192076@
+2 DATA
+3 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLM7
+2 _APID 1,60121::9637963
+0 @F1@ FAM
+1 HUSB @I122816762317@
+1 WIFE @I122816760422@
+1 CHIL @I122816762318@
+1 CHIL @I122816889034@
+1 CHIL @I122816889115@
+1 CHIL @I122816889311@
+0 @F2@ FAM
+1 HUSB @I122815871862@
+1 WIFE @I122815871925@
+1 CHIL @I122815871828@
+0 @F3@ FAM
+1 HUSB @I122816763999@
+1 WIFE @I122816760701@
+1 CHIL @I122816763998@
+0 @F4@ FAM
+1 HUSB @I122816758258@
+1 WIFE @I122816762492@
+1 CHIL @I122816761589@
+0 @F5@ FAM
+1 HUSB @I122816889311@
+1 WIFE @I122816889978@
+1 MARR
+2 DATE 27 Jul 1989
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KKW2
+3 _HPID 1,60121::15114506
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:7B24-KK2M
+3 _WPID 1,60121::15114507
+0 @F6@ FAM
+1 HUSB @I122816761589@
+1 WIFE @I122816762491@
+1 MARR
+2 DATE 20 Feb 1946
+2 PLAC Lima, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DG8
+3 _HPID 1,60121::7322466
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXQ-6DGB
+3 _WPID 1,60121::7322467
+0 @F7@ FAM
+1 HUSB @I122815868012@
+1 WIFE @I122815867021@
+0 @F8@ FAM
+1 HUSB @I122815868526@
+1 WIFE @I122815865406@
+1 CHIL @I122815868843@
+1 CHIL @I122815868937@
+0 @F9@ FAM
+1 HUSB @I122816759670@
+1 WIFE @I122816759671@
+1 CHIL @I122816759668@
+1 CHIL @I122816758461@
+1 CHIL @I122816759669@
+0 @F10@ FAM
+1 HUSB @I122816588071@
+1 WIFE @I122816588149@
+1 CHIL @I122816588236@
+1 CHIL @I122816588197@
+0 @F11@ FAM
+1 HUSB @I122816759670@
+1 WIFE @I122816887000@
+1 CHIL @I122816887001@
+1 CHIL @I122816887003@
+0 @F12@ FAM
+1 HUSB @I122816890738@
+1 WIFE @I122816758461@
+0 @F13@ FAM
+1 HUSB @I122816762398@
+1 WIFE @I122816762443@
+1 CHIL @I122816762317@
+0 @F14@ FAM
+1 HUSB @I122816759456@
+1 WIFE @I122816890447@
+1 CHIL @I122816890446@
+0 @F15@ FAM
+1 HUSB @I122815871773@
+1 WIFE @I122815871828@
+1 CHIL @I122816746394@
+1 CHIL @I122815865828@
+0 @F16@ FAM
+1 HUSB @I122815867921@
+1 WIFE @I122815866936@
+1 CHIL @I122815867969@
+0 @F17@ FAM
+1 HUSB @I122815865658@
+1 WIFE @I122815869095@
+1 CHIL @I122815869164@
+1 CHIL @I122815869371@
+1 CHIL @I122815869317@
+0 @F18@ FAM
+1 HUSB @I122815866090@
+1 WIFE @I122815866172@
+1 CHIL @I122477351804@
+1 CHIL @IYOLY014@
+1 CHIL @IYOLY015@
+1 CHIL @IYOLY016@
+1 CHIL @IYOLY017@
+1 CHIL @IYOLY009@
+1 CHIL @IYOLY018@
+1 CHIL @IYOLY022@
+1 CHIL @I122815870791@
+0 @F19@ FAM
+1 HUSB @I122477342532@
+1 WIFE @I122815865407@
+1 CHIL @I122815865406@
+1 CHIL @I122815865563@
+0 @F20@ FAM
+1 HUSB @I122816758258@
+1 WIFE @I122816761384@
+1 CHIL @I122816761383@
+0 @F21@ FAM
+1 HUSB @I122816761383@
+1 WIFE @I122816763099@
+1 CHIL @I122816763218@
+1 CHIL @I122816763281@
+0 @F22@ FAM
+1 HUSB @I122816759949@
+1 WIFE @I122816758818@
+1 CHIL @I122816759948@
+0 @F23@ FAM
+1 HUSB @I122477351804@
+1 WIFE @I122816586786@
+1 CHIL @I122816587065@
+1 CHIL @I122816587150@
+1 CHIL @I122816587199@
+0 @F24@ FAM
+1 HUSB @I122816762401@
+1 WIFE @I122816889761@
+1 MARR
+2 DATE 28 Enero 1955
+2 PLAC La Victoria, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RC3
+3 _HPID 1,60121::14649961
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGXS-5RCF
+3 _WPID 1,60121::14649962
+0 @F25@ FAM
+1 HUSB @I122816762317@
+1 WIFE @I122816762400@
+1 CHIL @I122816762401@
+0 @F26@ FAM
+1 HUSB @I122816587254@
+1 WIFE @I122816587065@
+1 CHIL @I122816587313@
+1 CHIL @I122816587368@
+0 @F27@ FAM
+1 HUSB @I122816760094@
+1 WIFE @I122816760121@
+1 CHIL @I122816760068@
+0 @F28@ FAM
+1 HUSB @I122477351804@
+1 WIFE @I122477351500@
+1 CHIL @I122815872925@
+1 CHIL @I122477342971@
+1 CHIL @I122815872396@
+1 CHIL @I122816587522@
+1 CHIL @I122815872303@
+1 CHIL @I122816587630@
+1 CHIL @I122815872768@
+1 CHIL @I122815872689@
+1 CHIL @I122815872567@
+1 CHIL @I122815880609@
+0 @F29@ FAM
+1 HUSB @I122477351804@
+1 WIFE @I122816586987@
+1 CHIL @I122816744237@
+1 CHIL @I122816744311@
+1 CHIL @I122816744392@
+1 CHIL @I122816744500@
+0 @F30@ FAM
+1 HUSB @I122815865828@
+1 WIFE @I122815865891@
+1 CHIL @I122477351500@
+0 @F31@ FAM
+1 _SREL other
+1 HUSB @I122816757968@
+1 WIFE @I122815865891@
+0 @F32@ FAM
+1 HUSB @I122816758258@
+1 WIFE @I122815865891@
+1 CHIL @I122816758188@
+1 CHIL @I122816761383@
+1 CHIL @I122816761588@
+0 @F33@ FAM
+1 HUSB @I122816760455@
+1 WIFE @I122815865891@
+1 CHIL @I122816760422@
+0 @F34@ FAM
+1 HUSB @I122815868158@
+1 WIFE @I122815868195@
+1 CHIL @I122815868255@
+1 CHIL @I122815865407@
+1 CHIL @I122815868343@
+1 CHIL @I122815868313@
+0 @F35@ FAM
+1 HUSB @I122815867416@
+1 WIFE @I122477342971@
+1 CHIL @I122815866936@
+1 CHIL @I122815866723@
+1 CHIL @I122815867021@
+0 @F36@ FAM
+1 HUSB @I122816760068@
+1 WIFE @I122816760076@
+1 CHIL @I122816758258@
+0 @F37@ FAM
+1 HUSB @I122815865828@
+1 WIFE @I122816587787@
+1 CHIL @I122816587852@
+1 CHIL @I122816587874@
+1 CHIL @I122816588071@
+0 @F38@ FAM
+1 HUSB @I122816762317@
+1 WIFE @I122816762399@
+0 @F39@ FAM
+1 HUSB @I122816889540@
+1 WIFE @I122816889115@
+1 MARR
+2 DATE 3 Feb 1960
+2 PLAC Miraflores, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CG2N
+3 _HPID 1,60121::9790402
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-CGLJ
+3 _WPID 1,60121::9790403
+0 @F40@ FAM
+1 HUSB @I122815871970@
+1 WIFE @I122815872013@
+1 CHIL @I122815871773@
+0 @F41@ FAM
+1 HUSB @I122816760856@
+1 WIFE @I122816760857@
+1 CHIL @I122816761094@
+1 CHIL @I122816760455@
+0 @F42@ FAM
+1 HUSB @I122816758258@
+1 WIFE @I122816763412@
+1 CHIL @I122816761588@
+0 @F43@ FAM
+1 HUSB @I122816758546@
+1 WIFE @I122816758952@
+1 CHIL @I122816758951@
+0 @F44@ FAM
+1 HUSB @I122816760455@
+1 WIFE @I122816761106@
+1 CHIL @I122816761107@
+1 CHIL @I122816761109@
+1 CHIL @I122816761110@
+0 @F45@ FAM
+1 HUSB @I122816762855@
+1 WIFE @I122816762856@
+1 CHIL @I122816762799@
+0 @F46@ FAM
+1 HUSB @I122816760455@
+1 WIFE @I122816761315@
+1 CHIL @I122816760422@
+0 @F47@ FAM
+1 HUSB @I122816759038@
+1 WIFE @I122816758705@
+1 CHIL @I122816759037@
+0 @F48@ FAM
+1 HUSB @I122814864601@
+1 WIFE @I122477342971@
+1 CHIL @I122477342532@
+0 @F49@ FAM
+1 HUSB @I122816758258@
+1 WIFE @I122816761590@
+0 @F50@ FAM
+1 HUSB @I122816746394@
+1 WIFE @I122816756723@
+1 CHIL @I122816756987@
+1 CHIL @I122816756841@
+1 CHIL @I122816756936@
+1 MARR
+2 DATE 6 May 1927
+2 PLAC Rio de Janeiro, Brasil
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJY-T4YP
+3 _WPID 1,9799::2764520
+2 SOUR @S233249656@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGJB-6VRG
+3 _HPID 1,9799::2764521
+0 @F51@ FAM
+1 HUSB @I122816761586@
+1 WIFE @I122816762799@
+1 CHIL @I122816762800@
+0 @F52@ FAM
+1 HUSB @I122816762318@
+1 WIFE @I122816888763@
+1 MARR
+2 DATE 17 Dic 1954
+2 PLAC Miraflores, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHCM
+3 _WPID 1,60121::8861811
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QLMY-MHH8
+3 _HPID 1,60121::8861812
+0 @F53@ FAM
+1 HUSB @I122815865563@
+1 WIFE @I122815868572@
+1 CHIL @I122815868633@
+1 CHIL @I122815868762@
+0 @F54@ FAM
+1 HUSB @I122816762561@
+1 WIFE @I122816762562@
+1 CHIL @I122816762491@
+0 @F55@ FAM
+1 HUSB @I122815880635@
+1 WIFE @I122815880609@
+1 CHIL @I122815880634@
+0 @F56@ FAM
+1 HUSB @I122816758188@
+1 WIFE @I122816758461@
+1 CHIL @I122816758598@
+1 CHIL @I122816759456@
+1 CHIL @I122816758705@
+1 CHIL @I122816758818@
+1 CHIL @I122816758546@
+1 CHIL @I122816763763@
+1 MARR
+2 PLAC Tarapoto - San MartÃ­n - PerÃº
+0 @F57@ FAM
+1 HUSB @I122815873703@
+1 WIFE @I122815873704@
+1 CHIL @I122815868158@
+0 @F58@ FAM
+1 HUSB @I122816891012@
+1 WIFE @I122816891013@
+1 CHIL @I122816890263@
+0 @F59@ FAM
+1 HUSB @I122816890263@
+1 WIFE @I122816890264@
+1 CHIL @I122816890261@
+1 CHIL @I122816890262@
+1 CHIL @I122816888763@
+1 MARR
+2 DATE 30 Dic 1923
+2 PLAC Miraflores, Lima, Lima, PerÃº
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-MLM4
+3 _WPID 1,60121::9637964
+2 SOUR @S233192076@
+3 DATA
+4 WWW https://www.familysearch.org/ark:/61903/1:1:QGX7-SXCB
+3 _HPID 1,60121::9637965
+0 @F60@ FAM
+1 HUSB @I122816764308@
+1 WIFE @I122816764309@
+1 CHIL @I122816756723@
+0 @F61@ FAM
+1 WIFE @I122816760543@
+1 CHIL @I122816760701@
+0 @F62@ FAM
+1 WIFE @I122816762856@
+1 CHIL @I122816763000@
+1 CHIL @I122816763001@
+1 CHIL @I122816762998@
+1 CHIL @I122816762999@
+0 @F63@ FAM
+1 HUSB @I122816758188@
+1 CHIL @I122816763761@
+1 CHIL @I122816763766@
+1 CHIL @I122816763768@
+0 @F64@ FAM
+1 WIFE @I122815866172@
+1 CHIL @I122815870791@
+0 @F65@ FAM
+1 HUSB @I122477342532@
+1 CHIL @I122815865658@
+0 @F66@ FAM
+1 WIFE @I122815868395@
+1 CHIL @I122815868195@
+0 @F67@ FAM
+1 WIFE @I122816890678@
+1 CHIL @I122816890677@
+0 @F68@ FAM
+1 WIFE @I122816760857@
+1 CHIL @I122816761095@
+1 CHIL @I122816761098@
+1 CHIL @I122816761100@
+1 CHIL @I122816761097@
+1 CHIL @I122816761105@
+1 CHIL @I122816761101@
+1 CHIL @I122816761099@
+1 CHIL @I122816761102@
+1 CHIL @I122816761096@
+1 CHIL @I122816761104@
+0 @F69@ FAM
+1 WIFE @I122816762108@
+1 CHIL @I122816762109@
+0 @F70@ FAM
+1 HUSB @I122816758258@
+1 CHIL @I122816761587@
+1 CHIL @I122816761586@
+0 @F71@ FAM
+1 WIFE @I122816762725@
+1 CHIL @I122816761586@
+0 @F72@ FAM
+1 HUSB @I122816890069@
+1 CHIL @I122816889540@
+0 @F73@ FAM
+1 HUSB @I122816587150@
+1 CHIL @I122816587458@
+0 @F74@ FAM
+1 WIFE @I122815865891@
+1 CHIL @I122816760543@
+1 CHIL @I122816760761@
+0 @F75@ FAM
+1 HUSB @I122816759670@
+1 CHIL @I122816887002@
+0 @O1@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpg
+3 _SIZE 4032
+3 _WDTH 165
+3 _HGHT 103
+2 TITL Android Photo
+1 _OID 1bf66985-74e3-4d36-afd4-dbf69f4b3059
+1 DATE 28 Jul 2022
+1 _META <metadataxml />
+1 _CREA 2026-11-18 22:04:50.484
+1 _USER JDOm0rAKofwZh/qbyj0v30lAUKOFQY3pz5lKJgINB5IxJqRX0b+/KD7HBMgC11o5ABI/NvtLnJoziK2FOhmEyw==
+2 _ENCR 1
+1 _CLON
+2 _TID 183674288
+2 _PID 422404087154
+2 _OID 30288bcb-b854-4b5f-9e80-7eacdbef429f
+2 _USER ZTkLTyoXaMDLkcc3QI65t4xP0kkw9XZ330S48+Rb5UXWical2yTSvOe9ubCpUItj0ITriHr6W/XikynzhPXNiw==
+3 _ENCR 1
+2 _DATE 2022-07-29 02:13:40.120
+1 _ORIG u
+1 _MSER
+2 _LKID aabfa05f-d947-4112-bb9c-c6ea15769a1f
+2 _PARM ms_params=
+1 _ATL N
+0 @O2@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpg
+3 _SIZE 908592
+3 _WDTH 1080
+3 _HGHT 2220
+2 TITL Android Photo
+1 _OID 2f0317e6-447d-4061-a0c1-6e38a7a8b97c
+1 DATE 29 Jul 2022
+1 _META <metadataxml />
+1 _CREA 2026-11-18 02:00:41.381
+1 _USER K++BRpnU1Hpi3UuaUXB68tyQYNYF4SBVH2zUiFaR9EYEAz6e86krjnT5xlhv6FD6wiu1tX93H7BQX6797fzXFg==
+2 _ENCR 1
+1 _CLON
+2 _TID 183674288
+2 _PID 422394274100
+2 _OID e9b8e3f9-6a05-4416-9715-b407bb048295
+2 _USER wNkHXgLGMSqb0p5mB1nEbOuKGXrOOaNiy8Pel89SRzWGWc/KMnvPTrnMHdU/vmLFJ5YysIUGWE/Pv+E1Sd45pw==
+3 _ENCR 1
+2 _DATE 2022-07-29 16:43:44.540
+1 _ORIG u
+1 _MSER
+2 _LKID 49d8ae7f-6f4c-45cc-b724-7ca0dfc67cfb
+1 _ATL N
+0 @O3@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpg
+3 _SIZE 60236
+3 _WDTH 604
+3 _HGHT 435
+2 TITL Android Photo
+1 _OID 4db1a2fd-9eff-4ff8-9cf8-fa3149ca6ef3
+1 DATE 15 mar. 2021
+1 _META <metadataxml />
+1 _CREA 2026-11-18 02:01:44.128
+1 _USER yuv6DK3nqcFUhrnziYpex2eRLz8lV/pOWpIAKnfWJyl7/i6AUcInYTlIesXfjN32ZxLbfl3woG/VL3n6JZtohA==
+2 _ENCR 1
+1 _CLON
+2 _TID 19521236
+2 _PID 816623905
+2 _OID 945c5501-381d-4b31-ae4d-858e6265a4b5
+2 _USER 3h+gf+x9HBpsh58Z7trBJ+/cdePYAienzePmF4R2uh8LqsYd6Xha9QCknWHSvGNDLgK1iDIYVtpCuiMxTd5GRA==
+3 _ENCR 1
+2 _DATE 2021-03-15 05:52:48.000
+1 _ORIG u
+1 _MSER
+2 _LKID 945c5501-381d-4b31-ae4d-858e6265a4b5
+1 _ATL N
+0 @O4@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpg
+3 _SIZE 374258
+3 _WDTH 672
+3 _HGHT 1009
+2 TITL Android Photo
+1 _OID 945e5c1c-9f5a-4ee7-88ba-2fafacf32eb4
+1 DATE 15 mar. 2021
+1 _META <metadataxml />
+1 _CREA 2026-11-18 02:01:11.289
+1 _USER lDEKIUAPbrvHDRoyyCoHswHGw02UQGgHHLWhJOlSaykKh+mGTUB3vUjjlfySEpAXKQsBpPpCwFKDvVbS1gJF0g==
+2 _ENCR 1
+1 _CLON
+2 _TID 19521236
+2 _PID 816623905
+2 _OID 2b784820-06d6-40b7-9015-77cac2834bb5
+2 _USER J3BAk3ZUrjQXnRzgZOh5EYMFtA5lAKiFiSmquiGHvpLs8RyFZQE2vs7H6spTn+ur7ln2d3RmiIdkLgcoY/5elA==
+3 _ENCR 1
+2 _DATE 2021-03-15 05:26:36.000
+1 _ORIG u
+1 _MSER
+2 _LKID 2b784820-06d6-40b7-9015-77cac2834bb5
+1 _ATL N
+0 @O5@ OBJE
+1 FILE
+2 FORM jpg
+3 TYPE image
+3 _MTYPE portrait
+3 _STYPE jpg
+3 _SIZE 213462
+3 _WDTH 1080
+3 _HGHT 1691
+2 TITL Android Photo
+1 _OID b06b506f-df64-464f-b33f-8d9e3c781096
+1 DATE 29 Jul 2022
+1 _META <metadataxml />
+1 _CREA 2026-11-18 02:00:01.771
+1 _USER XAelyc0VWpOTIngjoDyblrY8hlV8QPey7DIkeji/0tftRIzkElyjkdS3okivz7Fk4FCtnFdHzZMnOvSZDvzcQw==
+2 _ENCR 1
+1 _CLON
+2 _TID 183674288
+2 _PID 422394274100
+2 _OID 2bbf04c6-578d-4851-a69d-496e65f8d37b
+2 _USER jDnARw9wYal3+HEvYS9oJzxenIw643B6ZsxVuesPEfy5W6/3pdBEcetoNMmulbe7whREj17kJdWteiN5ZdDdEw==
+3 _ENCR 1
+2 _DATE 2022-07-29 16:41:17.344
+1 _ORIG u
+1 _MSER
+2 _LKID 2bbf04c6-578d-4851-a69d-496e65f8d37b
+1 _ATL N
+0 @S233192076@ SOUR
+1 TITL Lima, Peru, Civil Registration, 1874-1996
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Lehi, UT, USA
+1 _APID 1,60121::0
+1 REPO @R106192491@
+0 @S233192318@ SOUR
+1 TITL Ancestry Family Tree
+1 PUBL
+2 PLAC Online publication - Provo, UT, USA: Ancestry.com.  Original data:  Family Tree files submitted by Ancestry members.
+1 _APID 1,1030::0
+1 REPO @R106192491@
+0 @S233192523@ SOUR
+1 TITL Web: Australia Business Number Datasets 1999-2022
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2023
+2 PLAC Lehi, UT, USA
+1 _APID 1,62451::0
+1 REPO @R106192491@
+0 @S233192701@ SOUR
+1 TITL Peru, Cemetery Records, 1912-2013
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2024
+2 PLAC Lehi, UT, USA
+1 _APID 1,62851::0
+1 REPO @R106192491@
+0 @S233193716@ SOUR
+1 TITL California, U.S., Federal Naturalization Records, 1888-1991
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Lehi, UT, USA
+1 _APID 1,3998::0
+1 REPO @R106192491@
+0 @S233249142@ SOUR
+1 TITL Geneanet Community Trees Index
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2022
+2 PLAC Lehi, UT, USA
+1 _APID 1,62476::0
+1 REPO @R106192491@
+0 @S233249656@ SOUR
+1 TITL Rio de Janeiro, Brazil, Civil Registration, 1870-2012
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2014
+2 PLAC Lehi, UT, USA
+1 _APID 1,9799::0
+1 REPO @R106192491@
+0 @S233262417@ SOUR
+1 TITL Geneanet Community Trees Index
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2022
+2 PLAC Lehi, UT, USA
+1 REPO @R106192491@
+0 @S233265548@ SOUR
+1 TITL Rio de Janeiro, Brazil, Immigration Cards, 1900-1965
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+2 DATE 2016
+2 PLAC Lehi, UT, USA
+1 _APID 1,9800::0
+1 REPO @R106192491@
+0 @R106192491@ REPO
+1 NAME Ancestry.com
+0 @IYOLY001@ INDI
+1 NAME Vicente /Rodriguez Riva/
+2 GIVN Vicente
+2 SURN Rodriguez Riva
+1 SEX M
+1 FAMS @FYOLY01@
+1 DEAT
+2 DATE 20 Feb 1919
+2 PLAC Iquitos, Loreto, Peru
+1 NOTE Moyobamba. Tuberculosis. Citado en ArbolYoly.txt como suegro de Francisca / posible padre de Telesforo.
+0 @IYOLY002@ INDI
+1 NAME Juan de la Cruz /Fernandez/
+2 GIVN Juan de la Cruz
+2 SURN Fernandez
+1 SEX M
+1 FAMS @FYOLY02@
+1 BIRT
+2 DATE 1852
+2 PLAC Calzada, Moyobamba, San Martin, Peru
+1 NOTE Padre de Susana Fernandez Acosta. Fuente ArbolYoly.txt.
+0 @IYOLY003@ INDI
+1 NAME Adelaida /Acosta Cardenas/
+2 GIVN Adelaida
+2 SURN Acosta Cardenas
+1 SEX F
+1 FAMS @FYOLY02@
+1 BIRT
+2 DATE 1854
+2 PLAC Calzada, Moyobamba, San Martin, Peru
+1 DEAT
+2 DATE 1942
+1 NOTE Madre de Susana Fernandez Acosta. Fuente ArbolYoly.txt.
+0 @IYOLY004@ INDI
+1 NAME Hipolito /Cifuentes/
+2 GIVN Hipolito
+2 SURN Cifuentes
+1 SEX M
+1 FAMS @FYOLY03@
+1 NOTE Abuelo materno de Francisca (padre de Rosalia). Fuente ArbolYoly.txt.
+0 @IYOLY005@ INDI
+1 NAME Maria Francisca de la O. /Vasquez Ruiz/
+2 GIVN Maria Francisca de la O.
+2 SURN Vasquez Ruiz
+1 SEX F
+1 FAMC @FYOLY04@
+1 FAMS @FYOLY03@
+1 BIRT
+2 DATE 19 Dec 1841
+2 PLAC San Martin, Peru
+1 NOTE Abuela materna de Francisca. Fuente ArbolYoly.txt.
+0 @IYOLY006@ INDI
+1 NAME Alejandro /Vasquez/
+2 GIVN Alejandro
+2 SURN Vasquez
+1 SEX M
+1 FAMS @FYOLY04@
+0 @IYOLY007@ INDI
+1 NAME Maria Faustina /Ruiz/
+2 GIVN Maria Faustina
+2 SURN Ruiz
+1 SEX F
+1 FAMS @FYOLY04@
+0 @IYOLY008@ INDI
+1 NAME Emilio /Pinedo Vasquez/
+2 GIVN Emilio
+2 SURN Pinedo Vasquez
+1 SEX M
+1 NOTE Medio hermano de Rosalia; vivio en Yurimaguas. Fuente ArbolYoly.txt.
+0 @IYOLY009@ INDI
+1 NAME Maria Adela /Rodriguez Fernandez/
+2 GIVN Maria Adela
+2 SURN Rodriguez Fernandez
+1 SEX F
+1 FAMC @F18@
+1 FAMS @FYOLY05@
+1 BIRT
+2 DATE 13 Mar 1908
+2 PLAC Peru
+1 NOTE Hermana de Telesforo. Fecha texto 13.93.1908 interpretada 13.03.1908.
+0 @IYOLY010@ INDI
+1 NAME Toribio /Campos/
+2 GIVN Toribio
+2 SURN Campos
+1 SEX M
+1 FAMS @FYOLY05@
+0 @IYOLY011@ INDI
+1 NAME Maritza /Campos Rodriguez/
+2 GIVN Maritza
+2 SURN Campos Rodriguez
+1 SEX F
+1 FAMC @FYOLY05@
+0 @IYOLY012@ INDI
+1 NAME Mariela /Campos Rodriguez/
+2 GIVN Mariela
+2 SURN Campos Rodriguez
+1 SEX F
+1 FAMC @FYOLY05@
+0 @IYOLY013@ INDI
+1 NAME Milena /Campos Rodriguez/
+2 GIVN Milena
+2 SURN Campos Rodriguez
+1 SEX F
+1 FAMC @FYOLY05@
+0 @IYOLY014@ INDI
+1 NAME Juan de la Cruz /Rodriguez Fernandez/
+2 GIVN Juan de la Cruz
+2 SURN Rodriguez Fernandez
+1 SEX M
+1 FAMC @F18@
+1 BIRT
+2 DATE 13 Jan 1893
+0 @IYOLY015@ INDI
+1 NAME Teofilo /Rodriguez Fernandez/
+2 GIVN Teofilo
+2 SURN Rodriguez Fernandez
+1 SEX M
+1 FAMC @F18@
+1 BIRT
+2 DATE 1896
+1 DEAT
+2 DATE 26 Jul 1968
+0 @IYOLY016@ INDI
+1 NAME Julio Cesar /Rodriguez Fernandez/
+2 GIVN Julio Cesar
+2 SURN Rodriguez Fernandez
+1 SEX M
+1 FAMC @F18@
+1 BIRT
+2 DATE 1901
+1 DEAT
+2 DATE 12 Aug 1942
+1 NOTE Heroe campana 1941. Fuente ArbolYoly.txt.
+0 @IYOLY017@ INDI
+1 NAME Telesforo /Rodriguez Fernandez/
+2 GIVN Telesforo
+2 SURN Rodriguez Fernandez
+1 SEX M
+1 FAMC @F18@
+1 BIRT
+2 DATE 1903
+1 NOTE Hermano homonimo de Telesforo (N 1903). Fuente ArbolYoly.txt.
+0 @IYOLY018@ INDI
+1 NAME Eugenia Ysabel /Rodriguez Fernandez/
+2 GIVN Eugenia Ysabel
+2 SURN Rodriguez Fernandez
+1 SEX F
+1 FAMC @F18@
+1 FAMS @FYOLY06@
+1 BIRT
+2 DATE 20 Mar 1916
+0 @IYOLY019@ INDI
+1 NAME Luis Jesus /Barreiro/
+2 GIVN Luis Jesus
+2 SURN Barreiro
+1 SEX M
+1 FAMS @FYOLY06@
+1 NOTE Argentino. Fuente ArbolYoly.txt.
+0 @IYOLY020@ INDI
+1 NAME Leonor Ines /Barreiro Rodriguez/
+2 GIVN Leonor Ines
+2 SURN Barreiro Rodriguez
+1 SEX F
+1 FAMC @FYOLY06@
+1 FAMS @FYOLY07@
+1 BIRT
+2 DATE 11 Aug 1944
+2 PLAC Buenos Aires, Argentina
+0 @IYOLY021@ INDI
+1 NAME Sonia /Dios Barreiro/
+2 GIVN Sonia
+2 SURN Dios Barreiro
+1 SEX F
+1 FAMC @FYOLY07@
+0 @IYOLY022@ INDI
+1 NAME Exilda /Rodriguez Fernandez/
+2 GIVN Exilda
+2 SURN Rodriguez Fernandez
+1 SEX F
+1 FAMC @F18@
+1 FAMS @FYOLY08@
+1 BIRT
+2 DATE 17 Apr 1918
+1 DEAT
+2 DATE 24 Sep 2003
+0 @IYOLY023@ INDI
+1 NAME Luis /Cortez Zelaya/
+2 GIVN Luis
+2 SURN Cortez Zelaya
+1 SEX M
+1 FAMS @FYOLY08@
+0 @IYOLY024@ INDI
+1 NAME Consuelo /Cortez Rodriguez/
+2 GIVN Consuelo
+2 SURN Cortez Rodriguez
+1 SEX F
+1 FAMC @FYOLY08@
+0 @IYOLY025@ INDI
+1 NAME Luis /Cortez Rodriguez/
+2 GIVN Luis
+2 SURN Cortez Rodriguez
+1 SEX M
+1 FAMC @FYOLY08@
+0 @FYOLY01@ FAM
+1 HUSB @IYOLY001@
+1 WIFE @I122815866172@
+1 NOTE Union sugerida por ArbolYoly.txt; coexiste con Vicent Gerhart.
+0 @FYOLY02@ FAM
+1 HUSB @IYOLY002@
+1 WIFE @IYOLY003@
+1 CHIL @I122815866172@
+0 @FYOLY03@ FAM
+1 HUSB @IYOLY004@
+1 WIFE @IYOLY005@
+1 CHIL @I122815865891@
+0 @FYOLY04@ FAM
+1 HUSB @IYOLY006@
+1 WIFE @IYOLY007@
+1 CHIL @IYOLY005@
+0 @FYOLY05@ FAM
+1 HUSB @IYOLY010@
+1 WIFE @IYOLY009@
+1 CHIL @IYOLY011@
+1 CHIL @IYOLY012@
+1 CHIL @IYOLY013@
+0 @FYOLY06@ FAM
+1 HUSB @IYOLY019@
+1 WIFE @IYOLY018@
+1 CHIL @IYOLY020@
+0 @FYOLY07@ FAM
+1 WIFE @IYOLY020@
+1 CHIL @IYOLY021@
+0 @FYOLY08@ FAM
+1 HUSB @IYOLY023@
+1 WIFE @IYOLY022@
+1 CHIL @IYOLY024@
+1 CHIL @IYOLY025@
+0 TRLR

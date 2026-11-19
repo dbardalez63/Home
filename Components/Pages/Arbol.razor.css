@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap");
+
+.tree-page {
+    --ink: #0f2744;
+    --muted: #5b6b7c;
+    --accent: #0d9f9f;
+    --accent-deep: #0a7f7f;
+    --sky: #3b82f6;
+    --male: #2b8cee;
+    --female: #e86b8a;
+    --line: rgba(13, 159, 159, 0.32);
+    --leaf: #7ee7e0;
+    position: relative;
+    margin: -1.1rem -1.5rem 0;
+    min-height: calc(100vh - 3.5rem);
+    min-height: calc(100dvh - 3.5rem);
+    height: calc(100vh - 3.5rem);
+    height: calc(100dvh - 3.5rem);
+    padding: 1.25rem 1.5rem 1rem;
+    color: var(--ink);
+    background:
+        radial-gradient(ellipse 70% 55% at 0% 0%, rgba(59, 130, 246, 0.18), transparent 55%),
+        radial-gradient(ellipse 65% 50% at 100% 5%, rgba(13, 159, 159, 0.2), transparent 50%),
+        radial-gradient(ellipse 50% 40% at 50% 100%, rgba(232, 107, 138, 0.1), transparent 45%),
+        linear-gradient(165deg, #eef7ff 0%, #e8fbf7 48%, #f5f8fc 100%);
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.tree-header {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 1rem;
+    animation: rise 0.7s ease both;
+}
+
+.tree-kicker {
+    margin: 0 0 0.4rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.tree-header h1 {
+    margin: 0;
+    font-size: clamp(1.85rem, 4vw, 2.55rem);
+    font-family: "Outfit", "Manrope", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(120deg, #0f2744 20%, #0d9f9f 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tree-lead {
+    margin: 0.7rem 0 1rem;
+    max-width: 40rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.tree-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: end;
+    padding: 0.9rem 1rem;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(15, 39, 68, 0.06);
+    border-radius: 1.15rem;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(15, 39, 68, 0.06);
+}
+
+.toolbar-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.toolbar-field select {
+    min-width: 16rem;
+    max-width: 22rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    background: #fff;
+    color: var(--ink);
+    font-size: 0.9rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.toolbar-btn,
+.tree-html-link {
+    border: 1px solid rgba(15, 39, 68, 0.1);
+    background: #fff;
+    color: var(--ink);
+    border-radius: 0.75rem;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.toolbar-btn:hover,
+.tree-html-link:hover {
+    transform: translateY(-1px);
+    border-color: rgba(13, 159, 159, 0.35);
+}
+
+.toolbar-btn.active {
+    background: linear-gradient(135deg, var(--accent), var(--sky));
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(13, 159, 159, 0.3);
+}
+
+.tree-html-link {
+    margin-left: auto;
+    background: linear-gradient(135deg, var(--accent), var(--sky));
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(13, 159, 159, 0.28);
+}
+
+.hierarchy-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 1.1rem 0.65rem 2rem;
+    margin-top: 0.75rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(15, 39, 68, 0.05);
+    animation: rise 0.55s ease both;
+}
+
+.hierarchy {
+    min-width: 100%;
+    width: max-content;
+    padding: 1rem;
+}
+
+::deep .tree-root,
+::deep .tree-children {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+::deep .hierarchy.vertical .tree-root > .tree-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::deep .hierarchy.vertical .tree-children {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    position: relative;
+    padding-top: 1.5rem;
+    margin-top: 0.35rem;
+}
+
+::deep .hierarchy.vertical .tree-children::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 1.5rem;
+    background: var(--line);
+    transform: translateX(-50%);
+}
+
+::deep .hierarchy.vertical .tree-branch {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.1rem;
+}
+
+::deep .hierarchy.vertical .tree-children > .tree-branch::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 1.1rem;
+    background: var(--line);
+    transform: translateX(-50%);
+}
+
+::deep .hierarchy.vertical .tree-children > .tree-branch::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--line);
+}
+
+::deep .hierarchy.vertical .tree-children > .tree-branch:first-child::after {
+    left: 50%;
+}
+
+::deep .hierarchy.vertical .tree-children > .tree-branch:last-child::after {
+    right: 50%;
+}
+
+::deep .hierarchy.vertical .tree-children > .tree-branch:only-child::after {
+    display: none;
+}
+
+::deep .hierarchy.horizontal .tree-root > .tree-branch,
+::deep .hierarchy.horizontal .tree-branch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+::deep .hierarchy.horizontal .tree-children {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.85rem;
+    position: relative;
+    padding-left: 1.75rem;
+    margin-left: 0.35rem;
+}
+
+::deep .hierarchy.horizontal .tree-children::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1.75rem;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch {
+    position: relative;
+    padding-left: 1.1rem;
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1.1rem;
+    height: 2px;
+    background: var(--line);
+    transform: translateY(-50%);
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--line);
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch:first-child::after {
+    top: 50%;
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch:last-child::after {
+    bottom: 50%;
+}
+
+::deep .hierarchy.horizontal .tree-children > .tree-branch:only-child::after {
+    display: none;
+}
+
+::deep .tree-node-pair {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    z-index: 1;
+}
+
+::deep .spouse-amp {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+::deep .person-card,
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    min-width: 11.5rem;
+    max-width: 15rem;
+    text-align: left;
+    border: 1px solid rgba(15, 39, 68, 0.08);
+    border-left: 4px solid #94a3b8;
+    border-radius: 1rem;
+    padding: 0.75rem 0.85rem;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    box-shadow:
+        0 1px 2px rgba(15, 39, 68, 0.04),
+        0 8px 20px rgba(15, 39, 68, 0.06);
+}
+
+::deep .person-card:hover,
+.person-card:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 4px 10px rgba(15, 39, 68, 0.06),
+        0 14px 28px rgba(13, 159, 159, 0.12);
+}
+
+::deep .person-card.male,
+.person-card.male { border-left-color: var(--male); }
+::deep .person-card.female,
+.person-card.female { border-left-color: var(--female); }
+::deep .person-card.selected,
+.person-card.selected {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    background: #f0fffe;
+}
+
+::deep .person-name,
+.person-name {
+    font-family: "Outfit", "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+::deep .person-years,
+::deep .person-place,
+.person-years,
+.person-place {
+    font-size: 0.74rem;
+    color: var(--muted);
+}
+
+::deep .person-place,
+.person-place { font-style: normal; }
+
+.layers-view { animation: rise 0.55s ease both; }
+
+.layer-block {
+    margin-bottom: 1.4rem;
+}
+
+.layer-block h2 {
+    margin: 0 0 0.7rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    font-family: "Outfit", sans-serif;
+}
+
+.generation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.65rem;
+}
+
+.detail-panel {
+    position: sticky;
+    bottom: 0.85rem;
+    margin-top: 1.25rem;
+    padding: 1.15rem 1.3rem 1.25rem;
+    border-radius: 1.15rem;
+    background: linear-gradient(160deg, #12304f 0%, #0f2744 100%);
+    color: #f4f8fc;
+    box-shadow: 0 18px 44px rgba(15, 39, 68, 0.28);
+    animation: rise 0.35s ease both;
+    max-width: 42rem;
+}
+
+.detail-close {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.7rem;
+    border: 0;
+    background: transparent;
+    color: #c5d4e3;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.detail-sex {
+    margin: 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--leaf);
+}
+
+.detail-panel h2 {
+    margin: 0.25rem 0 0.85rem;
+    font-size: 1.25rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.detail-panel dl {
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.detail-panel dl div {
+    display: grid;
+    grid-template-columns: 9.5rem 1fr;
+    gap: 0.5rem;
+}
+
+.detail-panel dt { color: #94a8bc; font-size: 0.8rem; }
+.detail-panel dd { margin: 0; font-size: 0.92rem; }
+
+.make-root {
+    margin-top: 1rem;
+    border: 1px solid rgba(126, 231, 224, 0.45);
+    background: rgba(13, 159, 159, 0.2);
+    color: var(--leaf);
+    border-radius: 0.75rem;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 700px) {
+    .tree-page {
+        margin: -1.1rem -1rem 0;
+        padding: 1rem;
+    }
+
+    .tree-html-link { margin-left: 0; }
+
+    .toolbar-field select {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .detail-panel dl div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+    }
+
+    .hierarchy.vertical .tree-children {
+        flex-direction: column;
+        align-items: center;
+    }
+}

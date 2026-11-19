@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Árbol genealógico — Escritorio</title>
+  <link rel="stylesheet" href="arbol-tree.css" />
+  <style>
+    :root {
+      --ink: #0f2744;
+      --muted: #5b6b7c;
+      --accent: #0d9f9f;
+      --sky: #3b82f6;
+      --panel: rgba(255, 255, 255, 0.72);
+      --panel-border: rgba(15, 39, 68, 0.06);
+      --btn-bg: #fff;
+      --scroll-bg: rgba(255, 255, 255, 0.35);
+      --page-bg:
+        radial-gradient(ellipse 70% 55% at 0% 0%, rgba(59, 130, 246, 0.18), transparent 55%),
+        radial-gradient(ellipse 65% 50% at 100% 5%, rgba(13, 159, 159, 0.2), transparent 50%),
+        radial-gradient(ellipse 50% 40% at 50% 100%, rgba(232, 107, 138, 0.1), transparent 45%),
+        linear-gradient(165deg, #eef7ff 0%, #e8fbf7 48%, #f5f8fc 100%);
+      --title-grad: linear-gradient(120deg, #0f2744 20%, #0d9f9f 90%);
+    }
+    html.night {
+      --ink: #e6edf5;
+      --muted: #9aa8b8;
+      --accent: #5ec8c0;
+      --sky: #7aa7e0;
+      --panel: rgba(28, 39, 54, 0.88);
+      --panel-border: rgba(230, 237, 245, 0.08);
+      --btn-bg: #243041;
+      --scroll-bg: rgba(16, 24, 34, 0.55);
+      --page-bg:
+        radial-gradient(ellipse 70% 50% at 0% 0%, rgba(61, 110, 165, 0.22), transparent 55%),
+        radial-gradient(ellipse 60% 45% at 100% 0%, rgba(47, 127, 122, 0.18), transparent 50%),
+        linear-gradient(165deg, #0f1722 0%, #152032 50%, #101820 100%);
+      --title-grad: linear-gradient(120deg, #e6edf5 10%, #5ec8c0 90%);
+      color-scheme: dark;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      background: var(--page-bg);
+      background-attachment: fixed;
+      min-height: 100vh;
+      min-height: 100dvh;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    header {
+      flex: 0 0 auto;
+      padding: 1.15rem 1.25rem 0.75rem;
+      width: 100%;
+      max-width: none;
+      box-sizing: border-box;
+    }
+    .kicker {
+      margin: 0 0 .4rem; letter-spacing: .14em; text-transform: uppercase;
+      font-size: .7rem; color: var(--accent); font-weight: 700;
+    }
+    h1 {
+      margin: 0;
+      font-family: "Outfit", "Manrope", sans-serif;
+      font-size: clamp(1.85rem, 4vw, 2.55rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: var(--title-grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead { margin: .7rem 0 .5rem; max-width: 40rem; color: var(--muted); line-height: 1.5; font-size: .98rem; }
+    .toolbar {
+      display: flex; flex-wrap: wrap; gap: .75rem; align-items: end;
+      margin-top: 1rem; padding: .9rem 1rem;
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: 1.15rem;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(15, 39, 68, 0.06);
+    }
+    .field {
+      display: flex; flex-direction: column; gap: .3rem;
+      font-size: .7rem; font-weight: 700; color: var(--accent);
+      text-transform: uppercase; letter-spacing: .08em;
+    }
+    .field select {
+      min-width: 16rem; max-width: 24rem; padding: .55rem .75rem;
+      border-radius: .8rem; border: 1px solid var(--panel-border);
+      background: var(--btn-bg); color: var(--ink); font-size: .9rem;
+      text-transform: none; letter-spacing: normal; font-weight: 600;
+      font-family: inherit;
+    }
+    .btn-group { display: flex; flex-wrap: wrap; gap: .4rem; }
+    .btn {
+      border: 1px solid var(--panel-border); background: var(--btn-bg); color: var(--ink);
+      border-radius: .75rem; padding: .5rem .95rem; font-size: .85rem;
+      font-weight: 600; cursor: pointer; font-family: inherit;
+      transition: background .15s ease, color .15s ease, transform .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); border-color: rgba(13, 159, 159, 0.35); }
+    .btn.active {
+      background: linear-gradient(135deg, var(--accent), var(--sky));
+      border-color: transparent; color: #fff;
+      box-shadow: 0 4px 14px rgba(13, 159, 159, 0.3);
+    }
+    main {
+      flex: 1 1 auto;
+      min-height: 0;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0 1rem 0.75rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .scroll {
+      flex: 1 1 auto;
+      min-height: 0;
+      width: 100%;
+      overflow: auto;
+      padding: 1.1rem .65rem 2rem;
+      border-radius: 1.25rem;
+      background: var(--scroll-bg);
+      border: 1px solid var(--panel-border);
+      height: 100%;
+      position: relative;
+      overflow: auto;
+    }
+    .canvas-sizer { position: relative; min-width: 100%; }
+    .canvas {
+      transform-origin: top left;
+      width: max-content;
+      min-width: 100%;
+      transition: transform 0.12s ease;
+    }
+    #tree.interactive-tree {
+      min-width: 100%;
+      width: max-content;
+    }
+    .zoom-group { display: inline-flex; align-items: center; gap: .35rem; }
+    .zoom-group .btn { min-width: 2.4rem; padding-left: .65rem; padding-right: .65rem; }
+    .detail {
+      position: sticky; bottom: .85rem; margin: 1rem auto 0; max-width: 42rem;
+      padding: 1.15rem 1.3rem; border-radius: 1.15rem;
+      background: linear-gradient(160deg, #12304f 0%, #0f2744 100%);
+      color: #f4f8fc; box-shadow: 0 18px 44px rgba(15, 39, 68, 0.28);
+      display: none; animation: detail-in .28s ease;
+    }
+    .detail.visible { display: block; }
+    .detail .sex { margin: 0; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #7ee7e0; }
+    .detail h2 { margin: .25rem 0 .85rem; font-size: 1.25rem; font-family: "Outfit", sans-serif; font-weight: 600; }
+    .detail dl { margin: 0; display: grid; gap: .5rem; }
+    .detail dl div { display: grid; grid-template-columns: 9.5rem 1fr; gap: .5rem; }
+    .detail dt { color: #94a8bc; font-size: .8rem; }
+    .detail dd { margin: 0; font-size: .92rem; }
+    .detail-close { float: right; border: 0; background: transparent; color: #c5d4e3; font-size: 1.4rem; cursor: pointer; }
+    .detail-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+    .make-root, .ghost {
+      border: 1px solid rgba(126, 231, 224, 0.45); background: transparent; color: #7ee7e0;
+      border-radius: .75rem; padding: .45rem .9rem; cursor: pointer; font-size: .85rem; font-weight: 600; font-family: inherit;
+    }
+    .make-root { background: rgba(13, 159, 159, 0.2); }
+    footer {
+      flex: 0 0 auto;
+      padding: 0.35rem 1.25rem 0.85rem;
+      width: 100%;
+      max-width: none;
+      box-sizing: border-box;
+      color: var(--muted);
+      font-size: .85rem;
+    }
+    @keyframes detail-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 700px) {
+      .field select { min-width: 100%; max-width: 100%; }
+      .detail dl div { grid-template-columns: 1fr; gap: .15rem; }
+      .toolbar { padding: .75rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="kicker" id="source">Ancestry</p>
+    <h1>Árbol genealógico</h1>
+    <p class="lead">Vista escritorio. Usa ▲ antepasados, ↔ hermanos y ▼ descendientes en cada persona.</p>
+    <p class="hint-expand">Las flechas de cada tarjeta expanden o colapsan sin filtros globales.</p>
+    <div class="toolbar">
+      <label class="field">Raíz
+        <select id="rootSelect"></select>
+      </label>
+      <div class="btn-group">
+        <button type="button" class="btn active" data-orient="vertical">Vertical</button>
+        <button type="button" class="btn" data-orient="horizontal">Horizontal</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn" id="expandSome">Expandir 2 niveles</button>
+        <button type="button" class="btn" id="collapseAll">Colapsar todo</button>
+      </div>
+      <div class="btn-group zoom-group" title="También: Ctrl + rueda del ratón">
+        <button type="button" class="btn" id="zoomOut" aria-label="Alejar">−</button>
+        <button type="button" class="btn" id="zoomReset">Zoom 1×</button>
+        <button type="button" class="btn" id="zoomIn" aria-label="Acercar">+</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn" id="nightToggle" aria-pressed="false">Modo noche</button>
+      </div>
+      <a class="view-switch" href="arbol-movil.html">📲 Ver versión móvil</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="scroll" id="viewport">
+      <div class="canvas-sizer" id="canvasSizer">
+        <div class="canvas" id="canvas">
+          <div id="tree" class="interactive-tree vertical"></div>
+        </div>
+      </div>
+    </div>
+    <aside class="detail" id="detail"></aside>
+  </main>
+
+  <footer>Datos: Ancestry GEDCOM · Maria Adela Rodriguez</footer>
+
+  <script src="arbol-data.js"></script>
+  <script src="arbol-tree.js"></script>
+  <script>
+    const ui = window.FamilyTreeUI;
+    const treeEl = document.getElementById("tree");
+    const rootSelect = document.getElementById("rootSelect");
+    const detail = document.getElementById("detail");
+    const canvas = document.getElementById("canvas");
+    const canvasSizer = document.getElementById("canvasSizer");
+    const viewport = document.getElementById("viewport");
+    let scale = 1;
+
+    document.getElementById("source").textContent = ui.source;
+    ui.fillRootSelect(rootSelect);
+    ui.expandRootDefaults();
+    ui.bindContainer(treeEl);
+    ui.renderInto(treeEl);
+
+    function applyZoom() {
+      canvas.style.transform = `scale(${scale})`;
+      const w = canvas.offsetWidth;
+      const h = canvas.offsetHeight;
+      canvasSizer.style.width = Math.max(viewport.clientWidth - 8, Math.ceil(w * scale) + 32) + "px";
+      canvasSizer.style.height = Math.max(viewport.clientHeight - 8, Math.ceil(h * scale) + 32) + "px";
+      const label = scale === 1 ? "Zoom 1×" : `Zoom ${scale.toFixed(2).replace(/\.?0+$/, "")}×`;
+      document.getElementById("zoomReset").textContent = label;
+    }
+    function bumpZoom(delta) {
+      scale = Math.min(2.6, Math.max(0.35, +(scale + delta).toFixed(2)));
+      applyZoom();
+    }
+    const _render = ui.renderInto.bind(ui);
+    ui.renderInto = (el) => { _render(el); requestAnimationFrame(applyZoom); };
+    document.getElementById("zoomIn").onclick = () => bumpZoom(0.15);
+    document.getElementById("zoomOut").onclick = () => bumpZoom(-0.15);
+    document.getElementById("zoomReset").onclick = () => { scale = 1; applyZoom(); };
+    viewport.addEventListener("wheel", (e) => {
+      if (!e.ctrlKey && !e.metaKey) return;
+      e.preventDefault();
+      bumpZoom(e.deltaY > 0 ? -0.1 : 0.1);
+    }, { passive: false });
+    window.addEventListener("resize", () => applyZoom());
+    requestAnimationFrame(applyZoom);
+
+    ui.onDetail((id) => {
+      const p = ui.getPerson(id);
+      if (!p) return;
+      detail.classList.add("visible");
+      detail.innerHTML = `
+        <button type="button" class="detail-close" aria-label="Cerrar">×</button>
+        <p class="sex">${p.sex === "male" ? "Hombre" : p.sex === "female" ? "Mujer" : "—"}</p>
+        <h2>${ui.escapeHtml(p.name)}</h2>
+        <dl>
+          <div><dt>Nacimiento</dt><dd>${ui.escapeHtml(p.birth || "—")}</dd></div>
+          <div><dt>Fallecimiento</dt><dd>${ui.escapeHtml(p.death || "—")}</dd></div>
+          <div><dt>Lugar de nacimiento</dt><dd>${ui.escapeHtml(p.birthPlace || "—")}</dd></div>
+          <div><dt>Lugar de fallecimiento</dt><dd>${ui.escapeHtml(p.deathPlace || "—")}</dd></div>
+        </dl>
+        <div class="detail-actions">
+          <button type="button" class="make-root" data-act="root">Usar como raíz</button>
+          <button type="button" class="ghost" data-act="close">Cerrar</button>
+        </div>`;
+      detail.querySelector(".detail-close").onclick = () => {
+        detail.classList.remove("visible");
+        ui.selectedId = null;
+        ui.renderInto(treeEl);
+      };
+      detail.querySelector('[data-act="close"]').onclick = () => detail.querySelector(".detail-close").click();
+      detail.querySelector('[data-act="root"]').onclick = () => {
+        ui.setRoot(p.id, treeEl);
+        rootSelect.value = p.id;
+        detail.classList.remove("visible");
+      };
+    });
+
+    rootSelect.addEventListener("change", () => ui.setRoot(rootSelect.value, treeEl));
+
+    document.querySelectorAll("[data-orient]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("[data-orient]").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        ui.setOrientation(btn.dataset.orient, treeEl);
+      });
+    });
+
+    document.getElementById("expandSome").onclick = () => ui.expandAllVisible(treeEl, 2);
+    document.getElementById("collapseAll").onclick = () => ui.collapseAll(treeEl);
+
+    const nightBtn = document.getElementById("nightToggle");
+    function applyNight(on) {
+      document.documentElement.classList.toggle("night", on);
+      nightBtn.classList.toggle("active", on);
+      nightBtn.setAttribute("aria-pressed", on ? "true" : "false");
+      nightBtn.textContent = on ? "Modo día" : "Modo noche";
+      try { localStorage.setItem("familia-arbol-night", on ? "1" : "0"); } catch (_) {}
+    }
+    nightBtn.onclick = () => applyNight(!document.documentElement.classList.contains("night"));
+    try { if (localStorage.getItem("familia-arbol-night") === "1") applyNight(true); } catch (_) {}
+  </script>
+</body>
+</html>

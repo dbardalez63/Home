@@ -1,0 +1,177 @@
+@page "/arbol"
+@rendermode InteractiveServer
+@inject FamilyTreeService TreeService
+
+<PageTitle>Árbol genealógico</PageTitle>
+
+<div class="tree-page">
+    <header class="tree-header">
+        <p class="tree-kicker">@tree.SourceName</p>
+        <h1>Árbol genealógico</h1>
+        <p class="tree-lead">
+            Datos importados desde Ancestry (GEDCOM). Elige orientación y persona raíz para ver la jerarquía.
+        </p>
+
+        <div class="tree-toolbar">
+            <label class="toolbar-field">
+                <span>Raíz</span>
+                <select @bind="rootId" @bind:after="Rebuild">
+                    @foreach (var person in peopleOptions)
+                    {
+                        <option value="@person.Id">@person.FullName</option>
+                    }
+                </select>
+            </label>
+
+            <div class="btn-group" role="group" aria-label="Orientación">
+                <button type="button" class="@OrientClass("vertical")" @onclick='() => SetOrientation("vertical")'>Vertical</button>
+                <button type="button" class="@OrientClass("horizontal")" @onclick='() => SetOrientation("horizontal")'>Horizontal</button>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Modo">
+                <button type="button" class="@ModeClass("descendants")" @onclick='() => SetMode("descendants")'>Descendientes</button>
+                <button type="button" class="@ModeClass("ancestors")" @onclick='() => SetMode("ancestors")'>Antepasados</button>
+                <button type="button" class="@ModeClass("layers")" @onclick='() => SetMode("layers")'>Por niveles</button>
+            </div>
+
+            <a class="tree-html-link" href="arbol-movil">📲 Vista móvil (Blazor)</a>
+            <a class="tree-html-link" href="arbol-movil.html" target="_blank" rel="noopener">📲 HTML móvil</a>
+        </div>
+    </header>
+
+    @if (mode == "layers")
+    {
+        <div class="layers-view">
+            @foreach (var layer in layers)
+            {
+                <section class="layer-block">
+                    <h2>@layer.GenerationLabel</h2>
+                    <div class="generation-grid">
+                        @foreach (var person in layer.People)
+                        {
+                            <button type="button" class="@PersonClass(person)" @onclick="() => Select(person.Id)">
+                                <span class="person-name">@person.FullName</span>
+                                <span class="person-years">@person.YearsDisplay</span>
+                                @if (!string.IsNullOrWhiteSpace(person.BirthPlace))
+                                {
+                                    <span class="person-place">@person.BirthPlace</span>
+                                }
+                            </button>
+                        }
+                    </div>
+                </section>
+            }
+        </div>
+    }
+    else if (activeRoot is not null)
+    {
+        <div class="hierarchy-scroll">
+            <div class="hierarchy @orientation @(mode == "ancestors" ? "ancestors" : "descendants")">
+                <ul class="tree-root">
+                    <TreeBranch Node="activeRoot" SelectedId="selectedId" OnSelect="Select" />
+                </ul>
+            </div>
+        </div>
+    }
+
+    @if (Selected is not null)
+    {
+        <aside class="detail-panel" aria-live="polite">
+            <button type="button" class="detail-close" @onclick="ClearSelection" aria-label="Cerrar">×</button>
+            <p class="detail-sex">@(Selected.Sex == PersonSex.Male ? "Hombre" : Selected.Sex == PersonSex.Female ? "Mujer" : "—")</p>
+            <h2>@Selected.FullName</h2>
+            <dl>
+                <div><dt>Nacimiento</dt><dd>@(Selected.BirthDate ?? "—")</dd></div>
+                <div><dt>Fallecimiento</dt><dd>@(Selected.DeathDate ?? "—")</dd></div>
+                <div><dt>Lugar de nacimiento</dt><dd>@(Selected.BirthPlace ?? "—")</dd></div>
+                <div><dt>Lugar de fallecimiento</dt><dd>@(Selected.DeathPlace ?? "—")</dd></div>
+                @if (!string.IsNullOrWhiteSpace(Selected.Notes))
+                {
+                    <div><dt>Notas</dt><dd>@Selected.Notes</dd></div>
+                }
+            </dl>
+            <button type="button" class="make-root" @onclick="() => MakeRoot(Selected.Id)">Usar como raíz del árbol</button>
+        </aside>
+    }
+</div>
+
+@code {
+    private FamilyTreeSnapshot tree = default!;
+    private List<Person> peopleOptions = [];
+    private string rootId = "";
+    private string orientation = "vertical";
+    private string mode = "descendants";
+    private string? selectedId;
+    private TreeNode? activeRoot;
+    private IReadOnlyList<(string GenerationLabel, IReadOnlyList<Person> People)> layers = [];
+
+    private Person? Selected => selectedId is null ? null : TreeService.GetPerson(selectedId);
+
+    protected override void OnInitialized()
+    {
+        tree = TreeService.GetTree();
+        peopleOptions = TreeService.GetPeopleSorted().ToList();
+        rootId = tree.FocusPersonId;
+        Rebuild();
+    }
+
+    private void Rebuild()
+    {
+        if (string.IsNullOrWhiteSpace(rootId))
+        {
+            return;
+        }
+
+        if (mode == "ancestors")
+        {
+            activeRoot = TreeService.BuildAncestorTree(rootId);
+            layers = [];
+        }
+        else if (mode == "layers")
+        {
+            activeRoot = null;
+            layers = TreeService.GetGenerationLayers(rootId);
+        }
+        else
+        {
+            activeRoot = TreeService.BuildDescendantTree(rootId);
+            layers = [];
+        }
+    }
+
+    private void SetOrientation(string value)
+    {
+        orientation = value;
+    }
+
+    private void SetMode(string value)
+    {
+        mode = value;
+        Rebuild();
+    }
+
+    private void Select(string id) => selectedId = id;
+    private void ClearSelection() => selectedId = null;
+
+    private void MakeRoot(string id)
+    {
+        rootId = id;
+        selectedId = id;
+        Rebuild();
+    }
+
+    private string OrientClass(string value) => orientation == value ? "toolbar-btn active" : "toolbar-btn";
+    private string ModeClass(string value) => mode == value ? "toolbar-btn active" : "toolbar-btn";
+
+    private string PersonClass(Person person)
+    {
+        var sex = person.Sex switch
+        {
+            PersonSex.Male => "male",
+            PersonSex.Female => "female",
+            _ => "unknown"
+        };
+        var selected = selectedId == person.Id ? " selected" : "";
+        return $"person-card {sex}{selected}";
+    }
+}

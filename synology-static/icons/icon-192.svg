@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img">
+  <rect width="192" height="192" rx="40" fill="#2f5d4a"/>
+  <circle cx="96" cy="58" r="18" fill="#c6db6e"/>
+  <circle cx="58" cy="118" r="14" fill="#e7efe8"/>
+  <circle cx="134" cy="118" r="14" fill="#e7efe8"/>
+  <path d="M96 76v28M96 104L58 118M96 104l38 14" stroke="#c6db6e" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <text x="96" y="168" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#e7efe8">FR</text>
+</svg>

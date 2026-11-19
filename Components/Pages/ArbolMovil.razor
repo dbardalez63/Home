@@ -1,0 +1,196 @@
+@page "/arbol-movil"
+@layout MobileLayout
+@rendermode InteractiveServer
+@inject FamilyTreeService TreeService
+
+<PageTitle>Árbol móvil</PageTitle>
+
+<div class="m-app">
+    <header class="m-top">
+        <h1>Árbol familiar</h1>
+        <p>@tree.SourceName</p>
+    </header>
+
+    <section class="m-controls">
+        <label class="m-lbl">
+            Buscar
+            <input type="search" @bind="search" @bind:event="oninput" placeholder="Nombre..." />
+        </label>
+        <label class="m-lbl">
+            Persona raíz
+            <select @bind="rootId" @bind:after="Rebuild">
+                @foreach (var person in FilteredPeople)
+                {
+                    <option value="@person.Id">@person.FullName</option>
+                }
+            </select>
+        </label>
+
+        <div class="m-seg">
+            <button type="button" class="@ModeClass("descendants")" @onclick='() => SetMode("descendants")'>Hijos</button>
+            <button type="button" class="@ModeClass("ancestors")" @onclick='() => SetMode("ancestors")'>Padres</button>
+            <button type="button" class="@ModeClass("layers")" @onclick='() => SetMode("layers")'>Niveles</button>
+        </div>
+
+        @if (mode != "layers")
+        {
+            <div class="m-seg two">
+                <button type="button" class="@OrientClass("vertical")" @onclick='() => orientation = "vertical"'>Vertical</button>
+                <button type="button" class="@OrientClass("horizontal")" @onclick='() => orientation = "horizontal"'>Horizontal</button>
+            </div>
+        }
+
+        <div class="m-zoom">
+            <span>Zoom</span>
+            <div>
+                <button type="button" @onclick="ZoomOut">−</button>
+                <button type="button" @onclick="ZoomIn">+</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-stage">
+        <div class="m-viewport">
+            <div class="m-canvas" style="transform: scale(@scale.ToString(System.Globalization.CultureInfo.InvariantCulture))">
+                @if (mode == "layers")
+                {
+                    <div class="m-layers">
+                        @foreach (var layer in layers)
+                        {
+                            <section>
+                                <h2>@layer.GenerationLabel</h2>
+                                <div class="m-layer-grid">
+                                    @foreach (var person in layer.People)
+                                    {
+                                        <button type="button" class="@PersonClass(person)" @onclick="() => Select(person.Id)">
+                                            <span class="person-name">@person.FullName</span>
+                                            <span class="person-years">@person.YearsDisplay</span>
+                                        </button>
+                                    }
+                                </div>
+                            </section>
+                        }
+                    </div>
+                }
+                else if (activeRoot is not null)
+                {
+                    <div class="hierarchy @orientation">
+                        <ul class="tree-root">
+                            <TreeBranch Node="activeRoot" SelectedId="selectedId" OnSelect="Select" />
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <nav class="m-dock">
+        <a href="arbol-movil" class="active"><span>🌳</span>Árbol</a>
+        <a href="arbol"><span>💻</span>Escritorio</a>
+        <a href="arbol-genealogico.html" target="_blank" rel="noopener"><span>🖥</span>HTML PC</a>
+        <a href="arbol-movil.html" target="_blank" rel="noopener"><span>📲</span>HTML móvil</a>
+    </nav>
+</div>
+
+@if (Selected is not null)
+{
+    <div class="m-backdrop" @onclick="ClearSelection"></div>
+    <aside class="m-sheet">
+        <div class="m-handle"></div>
+        <p class="m-sex">@(Selected.Sex == PersonSex.Male ? "Hombre" : Selected.Sex == PersonSex.Female ? "Mujer" : "—")</p>
+        <h2>@Selected.FullName</h2>
+        <dl>
+            <div><dt>Nacimiento</dt><dd>@(Selected.BirthDate ?? "—")</dd></div>
+            <div><dt>Fallecimiento</dt><dd>@(Selected.DeathDate ?? "—")</dd></div>
+            <div><dt>Lugar nac.</dt><dd>@(Selected.BirthPlace ?? "—")</dd></div>
+            <div><dt>Lugar fall.</dt><dd>@(Selected.DeathPlace ?? "—")</dd></div>
+        </dl>
+        <div class="m-sheet-actions">
+            <button type="button" class="primary" @onclick="() => MakeRoot(Selected.Id)">Usar como raíz</button>
+            <button type="button" @onclick="ClearSelection">Cerrar</button>
+        </div>
+    </aside>
+}
+
+@code {
+    private FamilyTreeSnapshot tree = default!;
+    private List<Person> peopleOptions = [];
+    private string rootId = "";
+    private string search = "";
+    private string orientation = "vertical";
+    private string mode = "descendants";
+    private string? selectedId;
+    private double scale = 1;
+    private TreeNode? activeRoot;
+    private IReadOnlyList<(string GenerationLabel, IReadOnlyList<Person> People)> layers = [];
+
+    private Person? Selected => selectedId is null ? null : TreeService.GetPerson(selectedId);
+
+    private IEnumerable<Person> FilteredPeople =>
+        string.IsNullOrWhiteSpace(search)
+            ? peopleOptions
+            : peopleOptions.Where(p => p.FullName.Contains(search, StringComparison.OrdinalIgnoreCase));
+
+    protected override void OnInitialized()
+    {
+        tree = TreeService.GetTree();
+        peopleOptions = TreeService.GetPeopleSorted().ToList();
+        rootId = tree.FocusPersonId;
+        Rebuild();
+    }
+
+    private void Rebuild()
+    {
+        if (string.IsNullOrWhiteSpace(rootId)) return;
+
+        if (mode == "ancestors")
+        {
+            activeRoot = TreeService.BuildAncestorTree(rootId);
+            layers = [];
+        }
+        else if (mode == "layers")
+        {
+            activeRoot = null;
+            layers = TreeService.GetGenerationLayers(rootId);
+        }
+        else
+        {
+            activeRoot = TreeService.BuildDescendantTree(rootId);
+            layers = [];
+        }
+    }
+
+    private void SetMode(string value)
+    {
+        mode = value;
+        Rebuild();
+    }
+
+    private void Select(string id) => selectedId = id;
+    private void ClearSelection() => selectedId = null;
+
+    private void MakeRoot(string id)
+    {
+        rootId = id;
+        selectedId = null;
+        Rebuild();
+    }
+
+    private void ZoomIn() => scale = Math.Min(2.2, Math.Round(scale + 0.15, 2));
+    private void ZoomOut() => scale = Math.Max(0.45, Math.Round(scale - 0.15, 2));
+
+    private string OrientClass(string value) => orientation == value ? "active" : "";
+    private string ModeClass(string value) => mode == value ? "active" : "";
+
+    private string PersonClass(Person person)
+    {
+        var sex = person.Sex switch
+        {
+            PersonSex.Male => "male",
+            PersonSex.Female => "female",
+            _ => "unknown"
+        };
+        var selected = selectedId == person.Id ? " selected" : "";
+        return $"person-card {sex}{selected}";
+    }
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Accesos web — Synology</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#0f2744; --muted:#5b6b7c; --accent:#0d9f9f; --sky:#3b82f6; --ok:#059669; --err:#dc2626; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Manrope, "Segoe UI", sans-serif; color: var(--ink);
+      background:
+        radial-gradient(ellipse 70% 50% at 0% 0%, rgba(59,130,246,.16), transparent 55%),
+        linear-gradient(165deg, #eef7ff, #e8fbf7 50%, #f5f8fc);
+      min-height: 100vh;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 1.25rem 1rem 2.5rem; }
+    h1 { font-family: Outfit, sans-serif; margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+    .sub { color: var(--muted); margin: .35rem 0 1rem; }
+    .card {
+      background: rgba(255,255,255,.85); border: 1px solid rgba(15,39,68,.07);
+      border-radius: 1.1rem; padding: 1.1rem; box-shadow: 0 10px 28px rgba(15,39,68,.06);
+    }
+    .login { max-width: 24rem; margin: 12vh auto 0; }
+    label { display: grid; gap: .35rem; font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+    input[type=password], input[type=search] {
+      width: 100%; border: 1px solid rgba(15,39,68,.12); border-radius: .8rem;
+      padding: .7rem .85rem; font: inherit; font-weight: 600;
+    }
+    .btn {
+      border: 1px solid rgba(15,39,68,.1); background: #fff; border-radius: .8rem;
+      padding: .55rem .9rem; font: inherit; font-weight: 700; cursor: pointer; color: var(--ink);
+    }
+    .btn.primary {
+      border: 0; color: #fff; background: linear-gradient(135deg, var(--accent), var(--sky));
+      box-shadow: 0 6px 16px rgba(13,159,159,.28);
+    }
+    .error { color: var(--err); }
+    .toolbar { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-bottom: .9rem; }
+    .grow { flex: 1; min-width: 12rem; }
+    .stats { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .9rem; }
+    .pill { background: #fff; border: 1px solid rgba(15,39,68,.08); border-radius: .7rem; padding: .35rem .7rem; font-size: .8rem; font-weight: 700; }
+    .meta { color: var(--muted); font-size: .82rem; }
+    table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+    th, td { text-align: left; padding: .55rem .45rem; border-bottom: 1px solid rgba(15,39,68,.06); vertical-align: top; }
+    th { font-size: .7rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    .path { font-weight: 600; word-break: break-all; }
+    .st-2 { color: var(--ok); font-weight: 700; }
+    .st-4, .st-5 { color: var(--err); font-weight: 700; }
+    .ua { color: var(--muted); font-size: .78rem; }
+    .geo { color: var(--muted); font-size: .75rem; margin-top: .15rem; }
+    .empty { text-align: center; color: var(--muted); padding: 1.5rem; }
+    .hidden { display: none !important; }
+    @media (max-width: 800px) { .hide-sm { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="loginView" class="card login">
+      <h1>Accesos web</h1>
+      <p class="sub">Visor de visitas (HTML estático).</p>
+      <label>Contraseña
+        <input type="password" id="password" autofocus />
+      </label>
+      <p style="margin:1rem 0 0">
+        <button type="button" class="btn primary" id="loginBtn">Entrar</button>
+      </p>
+      <p class="error hidden" id="loginError">Contraseña incorrecta.</p>
+      <p class="meta" style="margin-top:1rem">La clave está en <code>auth.json</code> (la creó el instalador).</p>
+    </div>
+
+    <div id="appView" class="hidden">
+      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:flex-start">
+        <div>
+          <h1>Accesos web</h1>
+          <p class="sub">Registros de Nginx</p>
+        </div>
+        <button type="button" class="btn" id="logoutBtn">Salir</button>
+      </div>
+      <div class="toolbar">
+        <div class="grow"><input type="search" id="q" placeholder="Filtrar por IP, ruta, estado... (ej. familia)" /></div>
+        <button type="button" class="btn" id="refresh">Actualizar</button>
+        <label class="meta"><input type="checkbox" id="auto" checked /> Auto 15s</label>
+        <label class="meta"><input type="checkbox" id="onlyFamilia" /> Solo /familia</label>
+      </div>
+      <div class="stats" id="stats"></div>
+      <p class="meta" id="meta">Cargando...</p>
+      <div class="card" style="padding:0;overflow:auto">
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th><th>IP / Localidad</th><th>Estado</th><th>Ruta</th>
+              <th class="hide-sm">Origen</th><th class="hide-sm">Navegador</th>
+            </tr>
+          </thead>
+          <tbody id="rows"><tr><td colspan="6" class="empty">Cargando...</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const KEY = "fa_static_auth_v1";
+    let auth = null;
+    let entries = [];
+    let timer = null;
+
+    // SHA-256 puro (crypto.subtle NO funciona en http://IP de LAN)
+    function sha256(text) {
+      function rotr(n, x) { return (x >>> n) | (x << (32 - n)); }
+      function utf8(s) {
+        const out = [];
+        for (let i = 0; i < s.length; i++) {
+          let c = s.charCodeAt(i);
+          if (c < 0x80) out.push(c);
+          else if (c < 0x800) out.push(0xc0 | (c >> 6), 0x80 | (c & 63));
+          else if (c < 0xd800 || c >= 0xe000) out.push(0xe0 | (c >> 12), 0x80 | ((c >> 6) & 63), 0x80 | (c & 63));
+          else {
+            i++;
+            c = 0x10000 + (((c & 0x3ff) << 10) | (s.charCodeAt(i) & 0x3ff));
+            out.push(0xf0 | (c >> 18), 0x80 | ((c >> 12) & 63), 0x80 | ((c >> 6) & 63), 0x80 | (c & 63));
+          }
+        }
+        return out;
+      }
+      const K = [
+        0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+        0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+        0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+        0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+        0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+        0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+        0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+        0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
+      ];
+      const bytes = utf8(String(text));
+      const l = bytes.length;
+      const bitLen = l * 8;
+      bytes.push(0x80);
+      while ((bytes.length % 64) !== 56) bytes.push(0);
+      // longitud en bits (64-bit big-endian; passwords caben en 32-bit)
+      bytes.push(0, 0, 0, 0, (bitLen >>> 24) & 0xff, (bitLen >>> 16) & 0xff, (bitLen >>> 8) & 0xff, bitLen & 0xff);
+      let H = [0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+      for (let i = 0; i < bytes.length; i += 64) {
+        const w = new Array(64);
+        for (let j = 0; j < 16; j++) {
+          const o = i + j * 4;
+          w[j] = ((bytes[o] << 24) | (bytes[o+1] << 16) | (bytes[o+2] << 8) | bytes[o+3]) >>> 0;
+        }
+        for (let j = 16; j < 64; j++) {
+          const s0 = (rotr(7, w[j-15]) ^ rotr(18, w[j-15]) ^ (w[j-15] >>> 3)) >>> 0;
+          const s1 = (rotr(17, w[j-2]) ^ rotr(19, w[j-2]) ^ (w[j-2] >>> 10)) >>> 0;
+          w[j] = (w[j-16] + s0 + w[j-7] + s1) >>> 0;
+        }
+        let [a,b,c,d,e,f,g,h] = H;
+        for (let j = 0; j < 64; j++) {
+          const S1 = (rotr(6, e) ^ rotr(11, e) ^ rotr(25, e)) >>> 0;
+          const ch = ((e & f) ^ (~e & g)) >>> 0;
+          const t1 = (h + S1 + ch + K[j] + w[j]) >>> 0;
+          const S0 = (rotr(2, a) ^ rotr(13, a) ^ rotr(22, a)) >>> 0;
+          const maj = ((a & b) ^ (a & c) ^ (b & c)) >>> 0;
+          const t2 = (S0 + maj) >>> 0;
+          h = g; g = f; f = e; e = (d + t1) >>> 0;
+          d = c; c = b; b = a; a = (t1 + t2) >>> 0;
+        }
+        H = [
+          (H[0] + a) >>> 0, (H[1] + b) >>> 0, (H[2] + c) >>> 0, (H[3] + d) >>> 0,
+          (H[4] + e) >>> 0, (H[5] + f) >>> 0, (H[6] + g) >>> 0, (H[7] + h) >>> 0
+        ];
+      }
+      return H.map(x => ("00000000" + x.toString(16)).slice(-8)).join("");
+    }
+
+    function esc(s) {
+      return String(s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function shortUa(ua) {
+      if (!ua || ua === "-") return "—";
+      if (/Mobile|Android|iPhone/i.test(ua)) return "Móvil";
+      if (/Chrome/i.test(ua)) return "Chrome";
+      if (/Firefox/i.test(ua)) return "Firefox";
+      if (/Safari/i.test(ua)) return "Safari";
+      if (/curl|bot|spider|crawler/i.test(ua)) return "Bot/script";
+      return ua.slice(0, 40);
+    }
+
+    function showApp(on) {
+      document.getElementById("loginView").classList.toggle("hidden", on);
+      document.getElementById("appView").classList.toggle("hidden", !on);
+    }
+
+    function geoLabel(e) {
+      const g = e && e.geo ? e.geo : null;
+      if (!g) return "—";
+      return g.label || [g.city, g.region, g.country].filter(Boolean).join(", ") || "—";
+    }
+
+    function render() {
+      const q = (document.getElementById("q").value || "").trim().toLowerCase();
+      const onlyFam = document.getElementById("onlyFamilia").checked;
+      let filtered = entries.slice();
+      if (onlyFam) filtered = filtered.filter(e => String(e.path || "").includes("/familia"));
+      if (q) {
+        filtered = filtered.filter(e =>
+          [e.ip, e.path, e.status, e.referer, e.ua, e.time, e.method, geoLabel(e)]
+            .join(" ").toLowerCase().includes(q)
+        );
+      }
+      // Nuevos primero, antiguos al final
+      filtered.sort((a, b) => (b.ts || 0) - (a.ts || 0) || String(b.time || "").localeCompare(String(a.time || "")));
+
+      const ok = filtered.filter(e => String(e.status).startsWith("2")).length;
+      const notFound = filtered.filter(e => e.status === "404").length;
+      const ips = new Set(filtered.map(e => e.ip)).size;
+      document.getElementById("stats").innerHTML =
+        `<span class="pill">${filtered.length} visitas</span>` +
+        `<span class="pill">${ips} IPs</span>` +
+        `<span class="pill">${ok} OK</span>` +
+        `<span class="pill">${notFound} 404</span>`;
+
+      const rows = document.getElementById("rows");
+      if (!filtered.length) {
+        rows.innerHTML = `<tr><td colspan="6" class="empty">Sin coincidencias</td></tr>`;
+        return;
+      }
+      rows.innerHTML = filtered.map(e => {
+        const st = String(e.status || "")[0];
+        const geo = geoLabel(e);
+        return `<tr>
+          <td>${esc(e.time || "—")}</td>
+          <td>
+            <strong>${esc(e.ip || "—")}</strong>
+            <div class="geo">${esc(geo)}</div>
+          </td>
+          <td class="st-${st}">${esc(e.status || "—")}</td>
+          <td class="path">${esc((e.method || "") + " " + (e.path || ""))}</td>
+          <td class="hide-sm">${esc(e.referer && e.referer !== "-" ? e.referer : "—")}</td>
+          <td class="hide-sm ua" title="${esc(e.ua || "")}">${esc(shortUa(e.ua))}</td>
+        </tr>`;
+      }).join("");
+    }
+
+    async function loadAuth() {
+      const res = await fetch("auth.json?ts=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error("No se pudo leer auth.json");
+      auth = await res.json();
+    }
+
+    async function loadData() {
+      const res = await fetch("data/recent.json?ts=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) throw new Error("No se pudo leer data/recent.json (¿corre el sync?)");
+      const data = await res.json();
+      entries = Array.isArray(data.entries) ? data.entries : [];
+      let msg = "Actualizado: " + (data.generated || "—") + " · " + (data.source || "nginx");
+      if (!entries.length) msg += " · sin entradas";
+      document.getElementById("meta").textContent = msg;
+      render();
+    }
+
+    function tryLogin(pass) {
+      if (!auth || !auth.password_sha256) throw new Error("auth.json invalido");
+      const hex = sha256(pass);
+      if (hex !== String(auth.password_sha256).toLowerCase()) return false;
+      sessionStorage.setItem(KEY, hex);
+      return true;
+    }
+
+    async function boot() {
+      try {
+        await loadAuth();
+      } catch (err) {
+        document.getElementById("loginError").textContent = String(err);
+        document.getElementById("loginError").classList.remove("hidden");
+        return;
+      }
+      const saved = sessionStorage.getItem(KEY);
+      if (saved && auth && saved === String(auth.password_sha256).toLowerCase()) {
+        showApp(true);
+        await loadData();
+        arm();
+      } else {
+        showApp(false);
+      }
+    }
+
+    function arm() {
+      if (timer) clearInterval(timer);
+      timer = null;
+      if (document.getElementById("auto").checked) timer = setInterval(loadData, 15000);
+    }
+
+    document.getElementById("loginBtn").onclick = async () => {
+      const pass = document.getElementById("password").value || "";
+      const err = document.getElementById("loginError");
+      let ok = false;
+      try { ok = tryLogin(pass); }
+      catch (e) { err.textContent = String(e); err.classList.remove("hidden"); return; }
+      if (!ok) { err.textContent = "Contraseña incorrecta."; err.classList.remove("hidden"); return; }
+      err.classList.add("hidden");
+      showApp(true);
+      await loadData();
+      arm();
+    };
+    document.getElementById("password").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") document.getElementById("loginBtn").click();
+    });
+    document.getElementById("logoutBtn").onclick = () => {
+      sessionStorage.removeItem(KEY);
+      location.reload();
+    };
+    document.getElementById("refresh").onclick = loadData;
+    document.getElementById("q").oninput = render;
+    document.getElementById("onlyFamilia").onchange = render;
+    document.getElementById("auto").onchange = arm;
+    boot();
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@* Recursive branch for hierarchy visualization *@
+
+<li class="tree-branch">
+    <div class="tree-node-pair">
+        <button type="button" class="@CardClass(Node.Person)" @onclick="() => OnSelect.InvokeAsync(Node.Person.Id)">
+            <span class="person-name">@Node.Person.FullName</span>
+            <span class="person-years">@Node.Person.YearsDisplay</span>
+            @if (!string.IsNullOrWhiteSpace(Node.Person.BirthPlace))
+            {
+                <span class="person-place">@Node.Person.BirthPlace</span>
+            }
+        </button>
+        @if (Node.Spouse is not null)
+        {
+            <span class="spouse-amp">&amp;</span>
+            <button type="button" class="@CardClass(Node.Spouse) spouse" @onclick="() => OnSelect.InvokeAsync(Node.Spouse.Id)">
+                <span class="person-name">@Node.Spouse.FullName</span>
+                <span class="person-years">@Node.Spouse.YearsDisplay</span>
+            </button>
+        }
+    </div>
+
+    @if (Node.Children.Count > 0)
+    {
+        <ul class="tree-children">
+            @foreach (var child in Node.Children)
+            {
+                <TreeBranch Node="child" SelectedId="SelectedId" OnSelect="OnSelect" />
+            }
+        </ul>
+    }
+</li>
+
+@code {
+    [Parameter, EditorRequired] public TreeNode Node { get; set; } = default!;
+    [Parameter] public string? SelectedId { get; set; }
+    [Parameter] public EventCallback<string> OnSelect { get; set; }
+
+    private string CardClass(Person person)
+    {
+        var sex = person.Sex switch
+        {
+            PersonSex.Male => "male",
+            PersonSex.Female => "female",
+            _ => "unknown"
+        };
+        var selected = SelectedId == person.Id ? " selected" : "";
+        return $"person-card {sex}{selected}";
+    }
+}
